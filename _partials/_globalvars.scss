@@ -1,8 +1,6 @@
 
 // FONTS
 $headingFont: 'Walter Turncoat', cursive;
-$buttonFont:  'Walter Turncoat', cursive;
-$navFont: 'Roboto', sans-serif;
 $bodyFont:'Roboto', sans-serif;
 
 // FONT SIZE
@@ -10,8 +8,6 @@ $h1Size: 145.2px;
 $h1SizeOther: 121.5px;
 $h2Size: 45px;
 $h3Size: 40px;
-$buttonSize: 25.4px;
-$navSize: 20px;
 $bodySize: 20px;
 
 
@@ -20,9 +16,7 @@ $bodySize: 20px;
 $h2Height: 125.6px;
 $h3Height:99.8px;
 $h4Height:58px;
-$buttonHeight:41.6px;
 $bodyHeight: 28px;
-$navHeight: 29px;
 
 // LETTER SPACING 
 
@@ -53,8 +47,17 @@ $colourBrightAqua: #08fded;
 }
 @mixin navStyles($color) {
     color: $color;
-    font-family: $navFont;
-    font-size: $navSize;
-    letter-spacing: $navSpace;
-    line-height: $navHeight;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 29px;
+}
+
+@mixin buttonStyles($width){
+    background-color: $colourBrightAqua;
+    color: $colourPurple;
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 25.4px;
+    line-height: 41.6px;
+    width: $width;
 }

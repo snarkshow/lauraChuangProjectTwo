@@ -1,33 +1,60 @@
 
 .homeSection2{
     background-color: $colourPurple;
-    padding: 100px 0 100px 0;
+    padding: 50px 0;   
+}
+
+.homeSectionLeftImage{
     img{
-        &:first-of-type{
         box-shadow: 20px 20px $colourBrightAqua;
         display: inline-block;
-        margin: 0;
-        top: 0;
+        margin:0;
     }
-        &:last-of-type{
+}
+
+.homeSectionRight{
+    img{
         box-shadow: -20px 20px $colourBrightAqua;
         display: inline-block;
-        margin: 0;
-        right: 0;
+        margin:0;
+    }
+}
+
+
+.homeSection2Flex{
+    display: flex;
+    flex-direction: row;
+    .homeSectionLeft{
+        padding-right: 90px;
+        position: relative;
+        width: 50%;
+        .homeSectionLeftImage{
+            position: absolute;
+            top: -12%; 
+        }
+        .homeSectionLeftArticle{
+            padding-left: 90px; 
+            padding-top: 60%;
+        }
+    }
+    .homeSectionRight{
+        padding-left: 90px;
+        position: relative;
+        width: 50%;
+        .homeSectionRightArticle{
+            padding-right: 90px;
+        }
+        .homeSectionRightImage{
+            position: absolute;
+            bottom: -12%;
         }
     }
 }
 
-.homeSection2Flex{
-    display: flex;
-    .homeSection2Image,
-    .homeSection2Article
-    {
-        flex-basis: 50%;
-    }
-}
 
-.homeSection2Flex > article{
+
+.homeSectionLeftArticle,
+.homeSectionRightArticle{
     h3{
         color: $colourGrey;
         font-family: $headingFont;

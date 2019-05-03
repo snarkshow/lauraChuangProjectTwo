@@ -1,2 +1,18 @@
 // GALLERY 
 
+.gallery{
+    background-color: $colourPurple;
+    padding: 100px 0;
+}
+
+.galleryContent {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gallery .galleryItem {
+	
+	width: calc(33.3% - 20px);
+	margin: 10px;
+
+}
