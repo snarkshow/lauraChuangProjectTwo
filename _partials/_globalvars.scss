@@ -1,0 +1,60 @@
+
+// FONTS
+$headingFont: 'Walter Turncoat', cursive;
+$buttonFont:  'Walter Turncoat', cursive;
+$navFont: 'Roboto', sans-serif;
+$bodyFont:'Roboto', sans-serif;
+
+// FONT SIZE
+$h1Size: 145.2px;
+$h1SizeOther: 121.5px;
+$h2Size: 45px;
+$h3Size: 40px;
+$buttonSize: 25.4px;
+$navSize: 20px;
+$bodySize: 20px;
+
+
+// LINE HEIGHTS//
+
+$h2Height: 125.6px;
+$h3Height:99.8px;
+$h4Height:58px;
+$buttonHeight:41.6px;
+$bodyHeight: 28px;
+$navHeight: 29px;
+
+// LETTER SPACING 
+
+$h4Space: 1.3px;
+$navSpace: 1px;
+$bodySpace: 1px;
+
+// FONT WEIGHT
+$regular: 400;
+$bold: 700;
+
+// COLOURS
+
+$colourPurple: #474bb5;
+$colourDarkBlue: #044779;
+$colourGrey: #f3faff;
+$colourDarkAqua: #03697c;
+$colourBrightAqua: #08fded;
+
+// BODY FONTS
+
+@mixin bodyStyles($color) {
+    color: $color;
+    font-family: $bodyFont;
+    font-size: $bodySize;
+    letter-spacing: $bodySpace;
+    line-height: $bodyHeight;
+}
+@mixin navStyles($color) {
+    color: $color;
+    font-family: $navFont;
+    font-size: $navSize;
+    letter-spacing: $navSpace;
+    line-height: $navHeight;
+}

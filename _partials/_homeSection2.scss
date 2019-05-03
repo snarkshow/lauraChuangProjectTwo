@@ -1,0 +1,39 @@
+
+.homeSection2{
+    background-color: $colourPurple;
+    padding: 100px 0 100px 0;
+    img{
+        &:first-of-type{
+        box-shadow: 20px 20px $colourBrightAqua;
+        display: inline-block;
+        margin: 0;
+        top: 0;
+    }
+        &:last-of-type{
+        box-shadow: -20px 20px $colourBrightAqua;
+        display: inline-block;
+        margin: 0;
+        right: 0;
+        }
+    }
+}
+
+.homeSection2Flex{
+    display: flex;
+    .homeSection2Image,
+    .homeSection2Article
+    {
+        flex-basis: 50%;
+    }
+}
+
+.homeSection2Flex > article{
+    h3{
+        color: $colourGrey;
+        font-family: $headingFont;
+        font-size: $h3Size;
+    }
+    p{
+        @include bodyStyles($colourGrey);
+    }
+}

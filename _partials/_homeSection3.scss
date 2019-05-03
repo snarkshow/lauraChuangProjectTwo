@@ -1,0 +1,20 @@
+.homeSection3Wrapper{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.homeSection3{
+    background: $colourDarkAqua;
+    padding: 100px 50px;
+    text-align: center;
+    h3{
+        color: $colourGrey;
+        font-family: $headingFont;
+        font-size: $h3Size;
+        margin: 0;
+    }
+    p{
+        @include bodyStyles($colourGrey);
+    }
+    
+}

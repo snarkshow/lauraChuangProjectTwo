@@ -1,0 +1,14 @@
+footer{
+    background-color: $colourDarkAqua;
+    text-align: center;
+    width: 100%;
+    p{
+        color: $colourGrey;
+        font-family: $bodyFont;
+        font-size: $bodySize;
+        letter-spacing: $bodySpace;
+        line-height: $bodyHeight;
+        margin: 0;
+        padding: 5px 0;
+    }
+}

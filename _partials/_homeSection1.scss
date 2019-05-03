@@ -1,0 +1,27 @@
+.homeSection1{
+    background-color: $colourDarkAqua;
+    padding: 225px 0 150px 0;
+}
+
+.quickLinks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .quickLinksSection{
+        margin: 10px 30px;
+        width: calc(50% - 60px);
+    }
+}
+
+.quickLinksSection {
+    color: $colourGrey;
+    h2{
+        color: $colourGrey;
+        font-family: $headingFont;
+        font-size: $h2Size;
+    }
+    p{
+        @include bodyStyles($colourGrey);
+    }
+}
+
