@@ -9,6 +9,8 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Walter+Turncoat" rel="stylesheet">
         <link rel="stylesheet" href="styles/styles.css">
     </head>
@@ -17,10 +19,10 @@
             <div class="wrapper">
                 <nav>
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="blog-post.html">Contact</a></li>
                     </ul>
                 </nav>
                 <h1>FunPlace</h1>
@@ -30,10 +32,11 @@
             </div>
         </header>
         <main>
-            <section class="homeSection1">
+            <section class="homeSection1" id="about">
                 <div class="wrapper quickLinks">
                     <div class="quickLinksSection">
                         <a href="">
+                            <i class="fas fa-home circle-icon"></i>
                             <h2>New Space</h2>
                         </a>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse nemo veniam corporis eos! Quas corporis asperiores
@@ -41,6 +44,7 @@
                     </div>
                     <div class="quickLinksSection">
                         <a href="">
+                            <i class="fas fa-users circle-icon"></i>
                             <h2>Community</h2>
                         </a>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse nemo veniam corporis eos! Quas corporis asperiores
@@ -48,6 +52,7 @@
                     </div>
                     <div class="quickLinksSection">
                         <a href="">
+                            <i class="fas fa-file circle-icon"></i>
                             <h2>Blog</h2>
                         </a>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse nemo veniam corporis eos! Quas corporis asperiores
@@ -55,6 +60,7 @@
                     </div>
                     <div class="quickLinksSection">
                         <a href="">
+                            <i class="fas fa-phone circle-icon"></i>
                             <h2>Get in Touch</h2>
                         </a>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse nemo veniam corporis eos! Quas corporis asperiores
@@ -63,37 +69,34 @@
                 </div>   
             </section>
             <section class="homeSection2">
-                <div class="homeSection2Flex">
+                <div class="wrapper homeSection2Flex">
                     <div class="homeSectionLeft">
                         <figure class="homeSectionLeftImage">
                             <img src="FunPlace-final-assets/left-image.jpg" alt="KID WITH AFRO">
                         </figure>
-                        <article class="homeSectionLeftArticle">
+                        <article class="programsArticle">
                             <h3>Our Programs</h3>
                             <p>Lorem ipsum dolor sit amet consectetur, adip isicing elit. Esse nemo veniam corporis eos! Quas corporis
                                 asperiores
                                 nulla dicta temporibus velit saepe tempora, exercitationem non autem esse, maxime inventore deleniti natus.
                             </p>
-                            <a href="">Read More</a>
+                            <a class="readMore" href="">Read More</a>
                         </article>
                     </div>
                     <div class="homeSectionRight">
-                        <article class="homeSectionRightArticle">
+                        <article class="locationsArticle">
                             <h3>New Locations</h3>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse nemo veniam corporis eos! Quas corporis
                                 asperiores
                                 nulla dicta temporibus velit saepe tempora, exercitationem non autem esse, maxime inventore deleniti natus.
                             </p>
-                            <a href="">Read More</a>
+                            <a class="readMore" href="">Read More</a>
                         </article>
                         <div class="homeSectionRightImage">
                             <img src="FunPlace-final-assets/right-image.jpg" alt="CLOSEUP OF KID'S TOY">
                         </div>
                     </div>
                 </div>
-                
-                
-                
             </section>
             <section class="homeSection3">
                 <div class="homeSection3Wrapper">
@@ -108,15 +111,19 @@
                     <img src="FunPlace-final-assets/banner.jpg" alt="a widescreen shot of the families and children playing in a water park during the last road trip">
                 </div>
             </section>
-            <section>
-                <figure>
-                    <img src="" alt="">
-                </figure>
-                <article>
-                    <h3>Events</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit tempora consequatur accusamus ducimus unde, aliquid amet reiciendis, blanditiis quaerat accusantium dignissimos obcaecati non, nesciunt exercitationem molestias illum molestiae recusandae perspiciatis.</p>
-                    <a class="findOutMore"  href="">Find Out More</a>
-                </article>
+            <section class="eventsSection"> 
+                <div class="wrapper eventsFlex">
+                    <div class="eventsImage">
+                        <img src="FunPlace-final-assets/small-box.jpg" alt="Two blonde children looking at a worksheet on a clipboard">
+                    </div>
+                    <article class="eventsArticle">
+                        <h3>Events</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit tempora consequatur accusamus ducimus unde,
+                            aliquid amet reiciendis, blanditiis quaerat accusantium dignissimos obcaecati non, nesciunt exercitationem
+                            molestias illum molestiae recusandae perspiciatis.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto praesentium et dolorem est minima accusamus aliquid quidem, laboriosam inventore magnam soluta tenetur a animi qui provident rem perspiciatis, optio quae!</p>
+                        <a class="findOutMore" href="">Find Out More</a>
+                    </article>
+                </div>
             </section>
             <section class="gallery">
                 <div class="wrapper">

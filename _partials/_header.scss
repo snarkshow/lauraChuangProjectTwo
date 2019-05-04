@@ -14,11 +14,16 @@ nav ul{
 
 header{
     position: relative;
+    background-size: cover;
+    height: 70vh;
     &.homePage{
-        background-image:url("../FunPlace-final-assets/home-header.jpg");
-        background-color: $colourDarkBlue;
-        background-size: cover;
-        height: 70vh;
+        background-image:url("../FunPlace-final-assets/home-header.jpg");    
+    }
+    &.blog{
+        background-image:url("../FunPlace-final-assets/blog-header.jpg");
+    }
+    &.contact{
+        background-image:url("../FunPlace-final-assets/contact-header.jpg");
     }
 }
 

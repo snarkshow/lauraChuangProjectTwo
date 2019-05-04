@@ -1,11 +1,27 @@
+// GENERAL SETUP, VARIABLES, MIXINS
+
 @import '../_partials/_setup.scss';
 @import '../_partials/_globalvars.scss';
-@import '../_partials/_buttons.scss';
+@import '../_partials/_linkStyles.scss';
+@import '../_partials/_formStyles.scss';
+
+// HEADERS FOR ALL PAGES
 @import '../_partials/_header.scss';
+
+// HOMEPAGE STYLES
 @import '../_partials/_homeSection1.scss';
 @import '../_partials/_homeSection2.scss';
 @import '../_partials/_homeSection3.scss';
 @import '../_partials/_homeSection4.scss';
 @import '../_partials/_homeSection5.scss';
+
+// BLOG POST STYLES
+@import '../_partials/_blogPost.scss';
+@import '../_partials/_blogsideBar.scss';
+
+@import '../_partials/_contactPage.scss';
+
+
+// FOOTER STYLES
 @import '../_partials/_footer.scss';
 

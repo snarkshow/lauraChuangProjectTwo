@@ -155,6 +155,18 @@ a {
 img {
   width: 100%; }
 
+.circle-icon {
+  background: #08fded;
+  color: #474bb5;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle; }
+
+.readMore,
 .findOutMore {
   background-color: #08fded;
   color: #474bb5;
@@ -162,7 +174,134 @@ img {
   font-size: 25.4px;
   line-height: 41.6px;
   width: 100%;
-  padding: 5px 20px; }
+  padding: 5px 15px; }
+
+.submitButton {
+  background-color: #08fded;
+  color: #474bb5;
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 25.4px;
+  line-height: 41.6px;
+  width: 95%;
+  border: 1px solid #08fded;
+  margin: 10px; }
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .social li {
+    margin-right: 25px; }
+    .social li a {
+      font-size: 25px; }
+
+.form {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.formInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 100%; }
+
+.formText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%; }
+
+input,
+textarea {
+  margin: 10px;
+  padding: 20px; }
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    color: #f3faff;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 28px; }
+  input:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    color: #f3faff;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 28px; }
+  input::-ms-input-placeholder,
+  textarea::-ms-input-placeholder {
+    color: #f3faff;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 28px; }
+  input::placeholder,
+  textarea::placeholder {
+    color: #f3faff;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 28px; }
+
+.blogFormInput input {
+  border: none;
+  border-bottom: 2px solid #08fded;
+  -ms-flex-preferred-size: 45%;
+  flex-basis: 45%; }
+
+.blogFormText textarea {
+  border: 2px solid #08fded;
+  -ms-flex-preferred-size: 95%;
+  flex-basis: 95%;
+  margin: 20px 0; }
+
+.blogFormInput input,
+.blogFormText textarea {
+  background-color: #03697c; }
+
+.contactForm {
+  background-color: #474bb5;
+  -webkit-box-shadow: 20px 20px #08fded;
+  box-shadow: 20px 20px #08fded;
+  -ms-flex-preferred-size: 60%;
+  flex-basis: 60%;
+  padding: 50px;
+  position: relative;
+  top: -100px;
+  right: 20px; }
+
+.contactFormInput input {
+  border: none;
+  border-bottom: 2px solid #f3faff;
+  -ms-flex-preferred-size: 45%;
+  flex-basis: 45%; }
+
+.contactFormText textarea {
+  border: 2px solid #f3faff;
+  -ms-flex-preferred-size: 95%;
+  flex-basis: 95%;
+  margin: 20px 0; }
+
+.contactFormInput input,
+.contactFormText textarea {
+  background-color: #474bb5; }
 
 nav ul {
   display: -webkit-box;
@@ -171,6 +310,8 @@ nav ul {
   padding: 20px 30px; }
   nav ul li {
     padding: 30px 20px; }
+    nav ul li:hover a {
+      border-bottom: 3px solid #08fded; }
   nav ul a {
     color: #f3faff;
     font-family: 'Roboto', sans-serif;
@@ -179,24 +320,37 @@ nav ul {
     line-height: 29px; }
 
 header {
-  position: relative; }
+  position: relative;
+  background-size: cover;
+  height: 70vh; }
   header.homePage {
-    background-color: #044779;
-    height: 65vh; }
-  header > .homeHeaderImage {
-    position: absolute;
-    top: 35%;
-    right: 0;
-    width: 40%; }
+    background-image: url("../FunPlace-final-assets/home-header.jpg"); }
+  header.blog {
+    background-image: url("../FunPlace-final-assets/blog-header.jpg"); }
+  header.contact {
+    background-image: url("../FunPlace-final-assets/contact-header.jpg"); }
 
-h1 {
+.homeHeaderImage {
+  position: absolute;
+  top: 35%;
+  right: 0;
+  width: 40%; }
+
+.homePage h1 {
   color: #f3faff;
   font-family: "Walter Turncoat", cursive;
   font-size: 145.2px; }
 
+.blog h1,
+.contact h1 {
+  color: #f3faff;
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 121.5px;
+  line-height: 125.6px; }
+
 .homeSection1 {
   background-color: #03697c;
-  padding: 225px 0 150px 0; }
+  padding: 170px 0 150px 0; }
 
 .quickLinks {
   display: -webkit-box;
@@ -212,10 +366,18 @@ h1 {
 
 .quickLinksSection {
   color: #f3faff; }
+  .quickLinksSection a {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .quickLinksSection h2 {
     color: #f3faff;
-    font-family: "Walter Turncoat", cursive;
-    font-size: 45px; }
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 45px;
+    margin-left: 15px; }
   .quickLinksSection p {
     color: #f3faff;
     font-family: "Roboto", sans-serif;
@@ -223,11 +385,45 @@ h1 {
     letter-spacing: 1px;
     line-height: 28px; }
 
+.quickLinksSection:hover a h2 {
+  text-shadow: 2px 2px 2px #474bb5; }
+
+.quickLinksSection:hover a .circle-icon {
+  background: #474bb5;
+  border: 2px solid #08fded;
+  color: #08fded; }
+
 .homeSection2 {
   background-color: #474bb5;
   padding: 50px 0; }
 
-.homeSectionLeftImage img {
+.homeSectionLeft,
+.homeSectionRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .homeSectionLeft .homeSectionLeftImage,
+  .homeSectionLeft .homeSectionRightImage,
+  .homeSectionLeft .programsArticle,
+  .homeSectionLeft .locationsArticle,
+  .homeSectionRight .homeSectionLeftImage,
+  .homeSectionRight .homeSectionRightImage,
+  .homeSectionRight .programsArticle,
+  .homeSectionRight .locationsArticle {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%; }
+  .homeSectionLeft .homeSectionLeftImage,
+  .homeSectionRight .homeSectionLeftImage {
+    position: relative;
+    top: -90px;
+    left: -10%; }
+  .homeSectionLeft .homeSectionRightImage,
+  .homeSectionRight .homeSectionRightImage {
+    position: relative;
+    bottom: -70px;
+    right: -9%; }
+
+.homeSectionLeft img {
   -webkit-box-shadow: 20px 20px #08fded;
   box-shadow: 20px 20px #08fded;
   display: inline-block;
@@ -239,42 +435,24 @@ h1 {
   display: inline-block;
   margin: 0; }
 
-.homeSection2Flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row; }
-  .homeSection2Flex .homeSectionLeft {
-    padding-right: 90px;
-    position: relative;
-    width: 50%; }
-    .homeSection2Flex .homeSectionLeft .homeSectionLeftImage {
-      position: absolute;
-      top: -12%; }
-    .homeSection2Flex .homeSectionLeft .homeSectionLeftArticle {
-      padding-left: 90px;
-      padding-top: 60%; }
-  .homeSection2Flex .homeSectionRight {
-    padding-left: 90px;
-    position: relative;
-    width: 50%; }
-    .homeSection2Flex .homeSectionRight .homeSectionRightArticle {
-      padding-right: 90px; }
-    .homeSection2Flex .homeSectionRight .homeSectionRightImage {
-      position: absolute;
-      bottom: -12%; }
+.programsArticle {
+  padding-left: 10%; }
 
-.homeSectionLeftArticle h3,
-.homeSectionRightArticle h3 {
+.locationsArticle {
+  padding-right: 10%;
+  padding-top: 5%;
+  text-align: right; }
+
+.programsArticle h3,
+.locationsArticle h3 {
   color: #f3faff;
-  font-family: "Walter Turncoat", cursive;
-  font-size: 40px; }
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 40px;
+  line-height: 99.8px;
+  margin: 0; }
 
-.homeSectionLeftArticle p,
-.homeSectionRightArticle p {
+.programsArticle p,
+.locationsArticle p {
   color: #f3faff;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
@@ -291,8 +469,10 @@ h1 {
   text-align: center; }
   .homeSection3 h3 {
     color: #f3faff;
-    font-family: "Walter Turncoat", cursive;
+    font-family: 'Walter Turncoat', cursive;
     font-size: 40px;
+    line-height: 99.8px;
+    margin: 0;
     margin: 0; }
   .homeSection3 p {
     color: #f3faff;
@@ -302,7 +482,41 @@ h1 {
     line-height: 28px; }
 
 .homeBanner {
+  font-size: 0;
   width: 100%; }
+
+.eventsSection {
+  background-color: #03697c; }
+
+.eventsFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 0; }
+  .eventsFlex .eventsImage {
+    -ms-flex-preferred-size: 35%;
+    flex-basis: 35%;
+    padding-right: 50px;
+    min-width: 335px; }
+    .eventsFlex .eventsImage img {
+      -webkit-box-shadow: -20px 20px #08fded;
+      box-shadow: -20px 20px #08fded; }
+
+.eventsArticle {
+  -ms-flex-preferred-size: 65%;
+  flex-basis: 65%;
+  padding-left: 50px; }
+  .eventsArticle h3 {
+    color: #f3faff;
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 40px;
+    margin: 0; }
+  .eventsArticle p {
+    color: #f3faff;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 28px; }
 
 .gallery {
   background-color: #474bb5;
@@ -319,8 +533,158 @@ h1 {
   width: calc(33.3% - 20px);
   margin: 10px; }
 
-footer {
+.blogFlex {
   background-color: #03697c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 100px; }
+
+.blogPost {
+  background-color: #03697c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 5%;
+  position: relative;
+  top: -100px;
+  right: 0; }
+
+.blogImage {
+  position: relative; }
+  .blogImage img {
+    -webkit-box-shadow: -20px 20px #08fded;
+    box-shadow: -20px 20px #08fded; }
+
+.activities {
+  -webkit-box-shadow: -10px 10px #08fded;
+  box-shadow: -10px 10px #08fded;
+  padding: 80px;
+  position: relative;
+  right: 10px; }
+  .activities h2 {
+    color: #f3faff;
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 45px; }
+  .activities p {
+    color: #f3faff;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 28px; }
+
+.commentsSection {
+  background-color: #03697c;
+  margin-left: 5%;
+  padding: 0 0 0 80px;
+  position: relative;
+  right: 10px; }
+  .commentsSection h2 {
+    color: #f3faff;
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 45px;
+    margin: 0 0 50px 0; }
+  .commentsSection p {
+    color: #f3faff;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 28px; }
+
+.comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px; }
+  .comment .commentText {
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%; }
+    .comment .commentText .commentDate {
+      font-weight: bold;
+      font-style: italic;
+      margin: 0; }
+
+.commentImage {
+  margin-right: 30px; }
+
+.sideBar {
+  background-color: #474bb5;
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+  margin: 0 5%;
+  height: 100%;
+  padding: 0 20px 80px 20px;
+  position: relative;
+  top: 100px; }
+  .sideBar h3 {
+    color: #f3faff;
+    font-family: "Walter Turncoat", cursive;
+    font-size: 30px; }
+  .sideBar p {
+    color: #f3faff;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 28px; }
+
+.sideBarImage {
+  position: relative;
+  top: -20px;
+  left: -30%;
+  width: 130%; }
+
+.sideBar ul {
+  list-style-type: disc;
+  color: #08fded;
+  padding-left: 20px; }
+
+a {
+  color: #f3faff;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 28px; }
+
+.contactFlex {
+  background-color: #03697c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  width: 100%; }
+
+.contactInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-preferred-size: 40%;
+  flex-basis: 40%;
+  padding: 80px; }
+
+.contact p {
+  color: #f3faff;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 28px; }
+
+.address p {
+  margin: 5px 0; }
+
+footer {
+  background-color: #044779;
+  padding: 10px;
   text-align: center;
   width: 100%; }
   footer p {
@@ -329,5 +693,4 @@ footer {
     font-size: 20px;
     letter-spacing: 1px;
     line-height: 28px;
-    margin: 0;
-    padding: 5px 0; }
+    margin: 0; }
