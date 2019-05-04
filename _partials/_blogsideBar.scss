@@ -1,0 +1,35 @@
+.sideBar{
+    background-color: $colourPurple;
+    order: -1;
+    margin: 0 5%;
+    height: 100%;
+    padding: 0 20px 80px 20px;
+    position: relative;
+    top: 100px;
+    h3{
+        color: $colourGrey;
+        font-family: $headingFont;
+        font-size: 30px;
+    }
+    p{
+        @include bodyStyles($colourGrey);
+    }
+}
+
+.sideBarImage{
+    position: relative;
+    top: -20px; left: -30%;
+    width: 130%;
+}
+
+.sideBar ul{
+    list-style-type: disc;
+    color: $colourBrightAqua;
+    padding-left: 20px;
+}
+
+
+a{
+    @include bodyStyles($colourGrey);
+    
+}

@@ -8,9 +8,7 @@
     padding: 100px 50px;
     text-align: center;
     h3{
-        color: $colourGrey;
-        font-family: $headingFont;
-        font-size: $h3Size;
+        @include h3Styles($colourGrey);
         margin: 0;
     }
     p{

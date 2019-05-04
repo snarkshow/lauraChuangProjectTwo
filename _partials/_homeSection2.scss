@@ -4,7 +4,27 @@
     padding: 50px 0;   
 }
 
-.homeSectionLeftImage{
+.homeSectionLeft,
+.homeSectionRight{
+    display: flex;
+    .homeSectionLeftImage,
+    .homeSectionRightImage,
+    .programsArticle,
+    .locationsArticle{
+        flex-basis: 50%;
+    }
+    .homeSectionLeftImage{
+        position: relative;
+        top: -90px; left: -10%;
+    }
+    .homeSectionRightImage{
+        position: relative;
+        bottom: -70px; right: -9%;
+    }
+}
+
+
+.homeSectionLeft{
     img{
         box-shadow: 20px 20px $colourBrightAqua;
         display: inline-block;
@@ -20,45 +40,20 @@
     }
 }
 
-
-.homeSection2Flex{
-    display: flex;
-    flex-direction: row;
-    .homeSectionLeft{
-        padding-right: 90px;
-        position: relative;
-        width: 50%;
-        .homeSectionLeftImage{
-            position: absolute;
-            top: -12%; 
-        }
-        .homeSectionLeftArticle{
-            padding-left: 90px; 
-            padding-top: 60%;
-        }
-    }
-    .homeSectionRight{
-        padding-left: 90px;
-        position: relative;
-        width: 50%;
-        .homeSectionRightArticle{
-            padding-right: 90px;
-        }
-        .homeSectionRightImage{
-            position: absolute;
-            bottom: -12%;
-        }
-    }
+.programsArticle{
+    padding-left: 10%;
 }
 
+.locationsArticle{
+    padding-right: 10%;
+    padding-top: 5%;
+    text-align: right;
+}
 
-
-.homeSectionLeftArticle,
-.homeSectionRightArticle{
+.programsArticle,
+.locationsArticle{
     h3{
-        color: $colourGrey;
-        font-family: $headingFont;
-        font-size: $h3Size;
+        @include h3Styles($colourGrey);
     }
     p{
         @include bodyStyles($colourGrey);

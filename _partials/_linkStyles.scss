@@ -1,0 +1,44 @@
+// HOMEPAGE ICONS
+
+.circle-icon {
+    background: $colourBrightAqua;
+    color: $colourPurple;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    
+}
+
+// LINK STYLES
+
+.readMore,
+.findOutMore{
+    @include buttonStyles(100%);
+    padding: 5px 15px;
+}
+
+// EMAIL FORM BUTTON STYLES
+
+.submitButton{
+    @include buttonStyles(95%);
+    border: 1px solid $colourBrightAqua;
+    margin: 10px;
+}
+
+// SOCIAL MEDIA ICONS 
+
+.social {
+    display:flex;
+    li{
+        margin-right: 25px;
+        a{
+        font-size: 25px;
+        }
+    }
+}
+
+

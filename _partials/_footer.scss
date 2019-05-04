@@ -1,5 +1,6 @@
 footer{
-    background-color: $colourDarkAqua;
+    background-color: $colourDarkBlue;
+    padding: 10px;
     text-align: center;
     width: 100%;
     p{
@@ -9,6 +10,5 @@ footer{
         letter-spacing: $bodySpace;
         line-height: $bodyHeight;
         margin: 0;
-        padding: 5px 0;
     }
 }

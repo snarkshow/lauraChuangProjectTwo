@@ -1,0 +1,21 @@
+.contactFlex{
+    background-color: $colourDarkAqua;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.contactInfo{
+    display: flex;
+    justify-content: center;
+    flex-basis: 40%;
+    padding: 80px;
+}
+
+.contact p{
+    @include bodyStyles($colourGrey);
+}
+
+.address p{
+    margin: 5px 0;
+}

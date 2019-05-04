@@ -1,0 +1,84 @@
+.form{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formInput{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.formText{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+input,
+textarea{
+    margin: 10px;
+    padding: 20px;
+    &::placeholder{
+        @include bodyStyles($colourGrey);
+    }
+}
+
+// BLOG FORM STYLES
+
+.blogFormInput{
+    input{
+        border: none;
+        border-bottom: 2px solid $colourBrightAqua;
+        flex-basis: 45%;
+    }
+}
+
+.blogFormText{
+    textarea{
+        border: 2px solid $colourBrightAqua;
+        flex-basis: 95%;
+        margin: 20px 0;
+    }
+}
+
+.blogFormInput input,
+.blogFormText textarea{
+    background-color: $colourDarkAqua;
+}
+
+// CONTACT FORM STYLES
+
+
+.contactForm{
+    background-color: $colourPurple;
+    box-shadow: 20px 20px $colourBrightAqua;
+    flex-basis: 60%;
+    padding: 50px;
+    position: relative;
+    top: -100px; right: 20px;
+}
+
+
+.contactFormInput{
+    input{
+        border: none;
+        border-bottom: 2px solid $colourGrey;
+        flex-basis: 45%;
+    }
+}
+
+.contactFormText{
+    textarea{
+        border: 2px solid $colourGrey;
+        flex-basis: 95%;
+        margin: 20px 0;
+    }
+}
+
+.contactFormInput input,
+.contactFormText textarea{
+    background-color: $colourPurple;
+}

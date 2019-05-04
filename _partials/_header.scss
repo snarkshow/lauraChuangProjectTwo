@@ -3,6 +3,9 @@ nav ul{
     padding: 20px 30px;
         li{
             padding: 30px 20px;
+            &:hover a{
+                border-bottom: 3px solid $colourBrightAqua;
+            }
         }
             a{
                 @include navStyles($colourGrey);
@@ -12,19 +15,28 @@ nav ul{
 header{
     position: relative;
     &.homePage{
+        background-image:url("../FunPlace-final-assets/home-header.jpg");
         background-color: $colourDarkBlue;
-        height: 65vh;
+        background-size: cover;
+        height: 70vh;
     }
-    > .homeHeaderImage{
+}
+
+.homeHeaderImage{
     position: absolute;
     top: 35%;
     right: 0;
     width: 40%;
     }
-}
 
-h1{
+.homePage h1{
     color: $colourGrey;
     font-family: $headingFont;
     font-size: $h1Size;
 }
+
+.blog h1,
+.contact h1{
+    @include h1Styles($colourGrey);
+}
+

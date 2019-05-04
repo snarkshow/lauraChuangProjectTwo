@@ -1,8 +1,40 @@
 // FULL BLEED BANNER
 
 .homeBanner{
+    font-size: 0;
     width: 100%;
 }
 
 // EVENTS 
+
+.eventsSection{
+        background-color: $colourDarkAqua;
+}
+
+.eventsFlex{
+    display: flex;
+    padding: 100px 0;
+    .eventsImage{
+        flex-basis: 35%;
+        padding-right: 50px;
+        min-width: 335px;
+        img{
+            box-shadow: -20px 20px $colourBrightAqua;
+        }
+    }
+}
+
+.eventsArticle{
+    flex-basis: 65%;
+    padding-left: 50px; 
+    h3{
+        color: $colourGrey  ;
+        font-family: 'Walter Turncoat', cursive;
+        font-size: 40px;
+        margin: 0;
+    }
+    p{
+        @include bodyStyles($colourGrey);
+    }
+}
 

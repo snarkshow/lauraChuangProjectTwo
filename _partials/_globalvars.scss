@@ -6,15 +6,12 @@ $bodyFont:'Roboto', sans-serif;
 // FONT SIZE
 $h1Size: 145.2px;
 $h1SizeOther: 121.5px;
-$h2Size: 45px;
-$h3Size: 40px;
 $bodySize: 20px;
 
 
 // LINE HEIGHTS//
 
-$h2Height: 125.6px;
-$h3Height:99.8px;
+$h1Height: 125.6px;
 $h4Height:58px;
 $bodyHeight: 28px;
 
@@ -53,6 +50,26 @@ $colourBrightAqua: #08fded;
     line-height: 29px;
 }
 
+@mixin h1Styles($color){
+    color: $color;
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 121.5px;
+    line-height: 125.6px;
+}
+
+@mixin h2Styles($color){
+    color: $color;
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 45px;
+}
+@mixin h3Styles($color){
+    color: $color;
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 40px;
+    line-height: 99.8px;
+    margin: 0;
+}
+
 @mixin buttonStyles($width){
     background-color: $colourBrightAqua;
     color: $colourPurple;
@@ -61,3 +78,4 @@ $colourBrightAqua: #08fded;
     line-height: 41.6px;
     width: $width;
 }
+

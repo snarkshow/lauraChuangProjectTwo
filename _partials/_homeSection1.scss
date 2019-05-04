@@ -1,6 +1,6 @@
 .homeSection1{
     background-color: $colourDarkAqua;
-    padding: 225px 0 150px 0;
+    padding: 170px 0 150px 0;
 }
 
 .quickLinks{
@@ -15,13 +15,27 @@
 
 .quickLinksSection {
     color: $colourGrey;
+    a{
+        align-items: center;
+        display:flex;
+    }
     h2{
-        color: $colourGrey;
-        font-family: $headingFont;
-        font-size: $h2Size;
+        @include h2Styles($colourGrey);
+        margin-left: 15px;
     }
     p{
         @include bodyStyles($colourGrey);
+    }
+}
+
+.quickLinksSection:hover a{
+    h2{
+        text-shadow: 2px 2px 2px $colourPurple;
+    }
+    .circle-icon{
+        background: $colourPurple;
+        border: 2px solid $colourBrightAqua; 
+        color:  $colourBrightAqua;
     }
 }
 
