@@ -31,6 +31,7 @@
 .quickLinksSection:hover a{
     h2{
         text-shadow: 2px 2px 2px $colourPurple;
+        white-space: nowrap;
     }
     .circle-icon{
         background: $colourPurple;
@@ -39,3 +40,55 @@
     }
 }
 
+// MEDIA QUERIES
+
+@media (max-width: 1200px){
+    .homeSection1{
+        padding: 140px 0 120px 0;
+    }
+
+    .quickLinksSection h2{
+        font-size: calc(45px * 0.7);
+    }
+} 
+
+@media (max-width: 890px){} 
+
+@media (max-width: 767px){
+
+    .homeSection1{
+        padding: 120px 0 100px 0;
+    }
+
+    .quickLinksSection{
+        h2{
+        font-size: calc(45px * 0.6);
+        }   
+        p{
+        font-size: calc(20px * 0.9);
+        }
+    }
+
+} 
+@media (max-width: 650px){
+    .quickLinks{
+        flex-direction: column;
+        align-items: center;
+        .quickLinksSection{
+        width: calc(90% - 60px);
+        }
+    }
+} 
+
+@media (max-width: 480px){
+    .homeSection1{
+        padding: 60px 0 50px 0;
+    }
+
+    .quickLinksSection{
+        h2{
+        font-size: calc(45px * 0.5);
+        }   
+    }
+} 
+@media (max-width: 320px){}

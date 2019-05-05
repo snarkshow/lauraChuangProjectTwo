@@ -1,8 +1,8 @@
-
 .homeSection2{
     background-color: $colourPurple;
     padding: 50px 0;   
-}
+    }
+
 
 .homeSectionLeft,
 .homeSectionRight{
@@ -22,7 +22,6 @@
         bottom: -70px; right: -9%;
     }
 }
-
 
 .homeSectionLeft{
     img{
@@ -59,3 +58,136 @@
         @include bodyStyles($colourGrey);
     }
 }
+
+// MEDIA QUERIES
+
+@media (max-width: 1250px){
+
+    .homeSection2{
+    background-color: $colourPurple;
+    padding: 50px 0;   
+    }
+
+    .homeSectionLeft,
+    .homeSectionRight{
+        .homeSectionLeftImage,
+        .homeSectionRightImage{
+            flex-basis: 60%
+        }
+        .programsArticle,
+        .locationsArticle{
+        flex-basis: 40%;
+        }
+    }
+
+    .programsArticle{
+        padding-left: 4%;
+    }
+
+    .locationsArticle{
+        padding-right: 4%;
+        padding-top: 5%;
+    }
+
+    .programsArticle,
+    .locationsArticle{
+    h3{
+        font-size: calc(40px * 0.8);
+        line-height: calc(99.8px * 0.8);
+    }
+    p{
+        font-size: calc(20px * 0.9);
+    }
+}
+}
+
+@media (max-width: 1100px){
+    .homeSection2{
+    padding: 20px 0;   
+    }
+
+    .homeSectionLeft,
+    .homeSectionRight{
+        .homeSectionLeftImage{
+            position: relative;
+            top: -50px; left: -10%;
+        }
+        .homeSectionRightImage{
+            position: relative;
+            bottom: -50px; right: -8%;
+        }
+    }
+
+} 
+@media (max-width: 890px){
+    .homeSectionLeft,
+    .homeSectionRight{
+        .homeSectionLeftImage,
+        .homeSectionRightImage{
+            flex-basis: 55%
+        }
+        .programsArticle,
+        .locationsArticle{
+            flex-basis: 45%;
+        }
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .homeSection2{
+        padding: 0;
+    }
+
+    .homeSectionLeft,
+    .homeSectionRight{
+        flex-direction: column;
+        .homeSectionRightImage{
+            order: 1;
+        }
+        .locationsArticle{
+            order: 2;
+        }
+    }
+
+    .homeSectionLeft,
+    .homeSectionRight{
+        .homeSectionLeftImage{
+            padding-top: 50px;
+            position: relative;
+            margin: 0 auto; 
+            top: 0px; left: 0;
+        }
+        .homeSectionRightImage{
+            position: relative;
+            margin: 0 auto; 
+            top: 0px; left: 0;
+        }
+    }
+
+    .programsArticle,
+    .locationsArticle{
+        margin: 15px 10px;
+        padding: 15px 10px 50px;
+        text-align: left;
+    }
+
+} 
+@media (max-width: 650px){} 
+@media (max-width: 480px){
+
+    .homeSectionLeft{
+    img{
+        box-shadow: 5px 5px $colourBrightAqua;
+    }
+}
+
+.homeSectionRight{
+    img{
+        box-shadow: -5px 5px $colourBrightAqua;
+    }
+}
+
+} 
+@media (max-width: 320px){}

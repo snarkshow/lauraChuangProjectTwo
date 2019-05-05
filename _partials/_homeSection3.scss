@@ -1,3 +1,5 @@
+// ROAD TRIPS
+
 .homeSection3Wrapper{
     margin: 0 auto;
     width: 70%;
@@ -16,3 +18,52 @@
     }
     
 }
+
+// MEDIA QUERIES
+
+@media (max-width: 1200px){
+    .homeSection3Wrapper{
+    width: 85%;
+    }
+} 
+
+@media (max-width: 890px){
+    .homeSection3Wrapper{
+        width: 90%;
+    }
+} 
+
+@media (max-width: 767px){} 
+@media (max-width: 650px){
+    .homeSection3{
+        h3{
+        font-size: calc(40px * 0.8);
+        line-height: calc(99.8px * 0.8);
+        }
+        p{
+        font-size: calc(20px * 0.9);
+        }
+    }
+} 
+@media (max-width: 480px){
+    .homeSection3{
+
+    padding: 50px 15px;
+
+    }
+    .homeSection3Wrapper{
+        width: 95%;
+    }
+
+    .homeSection3{
+        text-align: left;
+        h3{
+        font-size: calc(40px * 0.6);
+        line-height: calc(99.8px * 0.4);
+        }
+        p{
+            
+        }
+    }
+} 
+@media (max-width: 320px){}

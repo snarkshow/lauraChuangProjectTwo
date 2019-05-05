@@ -8,16 +8,14 @@
 // EVENTS 
 
 .eventsSection{
-        background-color: $colourDarkAqua;
+    background-color: $colourDarkAqua;
+    padding: 100px 0;
 }
 
 .eventsFlex{
     display: flex;
-    padding: 100px 0;
     .eventsImage{
-        flex-basis: 35%;
         padding-right: 50px;
-        min-width: 335px;
         img{
             box-shadow: -20px 20px $colourBrightAqua;
         }
@@ -38,3 +36,58 @@
     }
 }
 
+// MEDIA QUERIES
+
+@media (max-width: 1200px){} 
+@media (max-width: 890px){
+    .eventsSection{
+        background-color: $colourDarkAqua;
+        padding: 50px 0;
+    }
+
+    .eventsFlex{
+        flex-direction: column;
+        .eventsImage{
+            padding: 15px;
+        }
+        .eventsImage,
+        .eventsArticle{
+            margin: 0 auto;
+        }
+    }
+
+    .eventsArticle{
+        h3{
+        font-size: calc(40px * 0.8);
+        line-height: calc(99.8px * 0.8);
+        }
+        p{
+        font-size: calc(20px * 0.9);
+        }
+    }
+} 
+@media (max-width: 767px){
+
+
+    
+} 
+@media (max-width: 650px){
+
+} 
+@media (max-width: 480px){
+
+
+    .eventsFlex{
+        .eventsImage{   
+          img{
+            box-shadow: -5px 5px $colourBrightAqua;
+            }
+        }
+    }
+
+    .eventsArticle{
+        padding: 10px;
+    }
+
+   
+} 
