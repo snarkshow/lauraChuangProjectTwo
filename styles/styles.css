@@ -309,9 +309,7 @@ textarea {
 
 @media (max-width: 480px) {
   .form {
-    margin: 10px; } }
-
-@media (max-width: 320px) {
+    margin: 10px; }
   .formInput.blogFormInput {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -828,7 +826,7 @@ header {
   flex-direction: column;
   margin-left: 5%;
   position: relative;
-  top: -100px;
+  top: -150px;
   right: 0; }
 
 .blogImage img {
@@ -887,7 +885,7 @@ header {
 .commentImage {
   margin-right: 30px; }
 
-@media (max-width: 767px) {
+@media (max-width: 890px) {
   .blogFlex {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -920,10 +918,12 @@ header {
   .activities {
     -webkit-box-shadow: none;
     box-shadow: none;
-    padding: 50px;
-    right: 10px; } }
-
-@media (max-width: 650px) {
+    padding: 30px;
+    right: 0px; }
+  .commentsSection {
+    margin: 6%;
+    padding: 0;
+    right: 0px; }
   .activities h2,
   .commentsSection h2 {
     font-size: calc(45px * 0.8);
@@ -933,16 +933,6 @@ header {
     font-size: calc(20px * 0.9); } }
 
 @media (max-width: 480px) {
-  .blogFlex .blogPost {
-    margin: 0; }
-  .commentsSection {
-    margin: 0 auto;
-    padding: 0;
-    right: 0; }
-    .commentsSection .comment {
-      padding: 0 30px; } }
-
-@media (max-width: 320px) {
   .blogFlex {
     margin: 0 auto;
     padding: 3% 0; }
@@ -953,7 +943,7 @@ header {
       -ms-flex-order: 1;
       order: 1; }
   .activities {
-    padding: 25px;
+    padding: 0px;
     right: 0px; }
   .activities h2,
   .commentsSection h2 {
@@ -975,7 +965,23 @@ header {
     flex-direction: column;
     padding: 0 10px; }
   .commentImage {
-    margin: 0 auto; } }
+    text-align: left;
+    width: 90px; }
+  .commentsSection {
+    margin: 0 auto;
+    padding: 0;
+    right: 0; }
+    .commentsSection .comment {
+      padding: 0 30px; } }
+
+@media (max-width: 320px) {
+  .activities h2,
+  .commentsSection h2 {
+    font-size: calc(45px * 0.7);
+    text-align: center; }
+  .activities p,
+  .commentsSection p {
+    font-size: calc(20px * 0.8); } }
 
 .sideBar {
   background-color: #474bb5;
@@ -1016,17 +1022,86 @@ a {
   letter-spacing: 1px;
   line-height: 28px; }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
+  .sideBar p,
+  .sideBar a {
+    font-size: calc(20px * 0.9); }
+  .sideBar a {
+    white-space: nowrap; }
+  .sideBarImage {
+    top: -20px;
+    left: -35%; } }
+
+@media (max-width: 1100px) {
+  .sideBar p,
+  .sideBar a {
+    font-size: calc(20px * 0.8); }
+  .sideBarImage {
+    top: -20px;
+    left: -40%; } }
+
+@media (max-width: 890px) {
   .sideBar {
-    background-color: #474bb5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
-    order: 2; }
+    order: 2;
+    margin: 8%;
+    padding: 40px;
+    top: 0; }
+    .sideBar figure,
+    .sideBar article {
+      margin: 0 20px; }
+    .sideBar figure {
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+      width: 55%; }
+    .sideBar article {
+      width: 45%; }
   .sideBarImage {
     position: relative;
     top: 0px;
     left: 0%;
     width: 100%; } }
+
+@media (max-width: 650px) {
+  .sideBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    padding: 40px;
+    top: 0; }
+    .sideBar figure,
+    .sideBar article {
+      margin: 0 auto;
+      width: 100%; }
+    .sideBar figure {
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; } }
+
+@media (max-width: 480px) {
+  .sideBar {
+    margin: 5%; }
+    .sideBar h3 {
+      margin: 0; }
+  .sideBarImage {
+    display: none; } }
 
 .contactFlex {
   background-color: #03697c;
