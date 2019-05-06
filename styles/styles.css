@@ -307,6 +307,17 @@ textarea {
 .contactFormText textarea {
   background-color: #474bb5; }
 
+@media (max-width: 480px) {
+  .form {
+    margin: 10px; } }
+
+@media (max-width: 320px) {
+  .formInput.blogFormInput {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -396,6 +407,9 @@ header {
 @media (max-width: 480px) {
   .homePage h1 {
     font-size: calc(145.2px * 0.5); }
+  .blog h1,
+  .contact h1 {
+    font-size: calc(121.5px * 0.6); }
   .homeHeaderImage {
     width: 60%; }
   nav ul {
@@ -407,7 +421,10 @@ header {
 
 @media (max-width: 320px) {
   .homePage h1 {
-    font-size: calc(145.2px * 0.4); } }
+    font-size: calc(145.2px * 0.4); }
+  .blog h1,
+  .contact h1 {
+    font-size: calc(121.5px * 0.5); } }
 
 .homeSection1 {
   background-color: #03697c;
@@ -814,11 +831,9 @@ header {
   top: -100px;
   right: 0; }
 
-.blogImage {
-  position: relative; }
-  .blogImage img {
-    -webkit-box-shadow: -20px 20px #08fded;
-    box-shadow: -20px 20px #08fded; }
+.blogImage img {
+  -webkit-box-shadow: -20px 20px #08fded;
+  box-shadow: -20px 20px #08fded; }
 
 .activities {
   -webkit-box-shadow: -10px 10px #08fded;
@@ -859,7 +874,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  padding: 0 20px; }
   .comment .commentText {
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%; }
@@ -870,6 +886,96 @@ header {
 
 .commentImage {
   margin-right: 30px; }
+
+@media (max-width: 767px) {
+  .blogFlex {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 5% 0; }
+    .blogFlex .blogPost {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin: 5%;
+      top: 0px;
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1; }
+  .blogImage img {
+    -webkit-box-shadow: -20px 20px #08fded;
+    box-shadow: -20px 20px #08fded; }
+  .activities {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 50px;
+    right: 10px; } }
+
+@media (max-width: 650px) {
+  .activities h2,
+  .commentsSection h2 {
+    font-size: calc(45px * 0.8);
+    text-align: center; }
+  .activities p,
+  .commentsSection p {
+    font-size: calc(20px * 0.9); } }
+
+@media (max-width: 480px) {
+  .blogFlex .blogPost {
+    margin: 0; }
+  .commentsSection {
+    margin: 0 auto;
+    padding: 0;
+    right: 0; }
+    .commentsSection .comment {
+      padding: 0 30px; } }
+
+@media (max-width: 320px) {
+  .blogFlex {
+    margin: 0 auto;
+    padding: 3% 0; }
+    .blogFlex .blogPost {
+      padding: 10px;
+      top: 0px;
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1; }
+  .activities {
+    padding: 25px;
+    right: 0px; }
+  .activities h2,
+  .commentsSection h2 {
+    font-size: calc(45px * 0.6);
+    text-align: center; }
+  .activities p,
+  .commentsSection p {
+    font-size: calc(20px * 0.9); }
+  .blogImage img {
+    -webkit-box-shadow: -5px 5px #08fded;
+    box-shadow: -5px 5px #08fded; }
+  .comment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0 10px; }
+  .commentImage {
+    margin: 0 auto; } }
 
 .sideBar {
   background-color: #474bb5;
@@ -909,6 +1015,18 @@ a {
   font-size: 20px;
   letter-spacing: 1px;
   line-height: 28px; }
+
+@media (max-width: 767px) {
+  .sideBar {
+    background-color: #474bb5;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2; }
+  .sideBarImage {
+    position: relative;
+    top: 0px;
+    left: 0%;
+    width: 100%; } }
 
 .contactFlex {
   background-color: #03697c;

@@ -82,3 +82,19 @@ textarea{
 .contactFormText textarea{
     background-color: $colourPurple;
 }
+
+// MEDIA QUERIES
+
+@media (max-width: 1200px){} @media (max-width: 890px){} @media (max-width: 767px){} @media (max-width: 650px){} 
+
+@media (max-width: 480px){
+    .form{
+        margin: 10px;
+    }
+} 
+@media (max-width: 320px){
+
+    .formInput.blogFormInput{
+        flex-direction: column;
+    }
+}

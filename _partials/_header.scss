@@ -119,6 +119,12 @@ header{
         font-size: calc(145.2px * 0.5);
     }
 
+    .blog h1,
+    .contact h1{
+        font-size: calc(121.5px * 0.6);
+    }
+
+
     .homeHeaderImage{
         width: 60%;
     }
@@ -138,6 +144,10 @@ header{
 @media (max-width: 320px){
     .homePage h1{
         font-size: calc(145.2px * 0.4);
+    }
+     .blog h1,
+    .contact h1{
+        font-size: calc(121.5px * 0.5);
     }
 }
 

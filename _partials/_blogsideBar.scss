@@ -28,8 +28,25 @@
     padding-left: 20px;
 }
 
-
 a{
     @include bodyStyles($colourGrey);
     
 }
+
+@media (max-width: 1200px){} 
+@media (max-width: 890px){} 
+@media (max-width: 767px){
+    .sideBar{
+    background-color: $colourPurple;
+    order: 2;
+    }
+
+    .sideBarImage{
+    position: relative;
+    top: 0px; left: 0%;
+    width: 100%;
+}
+} 
+@media (max-width: 650px){} 
+@media (max-width: 480px){} 
+@media (max-width: 320px){}
