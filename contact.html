@@ -20,18 +20,20 @@
 <body>
     <header class="contact">
         <div class="wrapper">
+            <input type="checkbox" id="toggle" name="toggle">
             <nav>
                 <ul>
-                    <li><a href="index.htmk">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <label for="toggle"> Menu </i> </label>
             <h1>Get in Touch</h1>
         </div>
     </header>
-    <div class="contactFlex">
+    <div class="contactFlex wrapper">
         <main class="contactForm">
             <form action="">
                 <div class="form">
@@ -47,7 +49,7 @@
             </form>
         </main>
         <aside class="contactInfo">
-            <div class="contact">
+            <div class="contactInfoWrapper wrapper">
                 <ul class="social">
                     <li>
                         <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
@@ -66,8 +68,9 @@
                         <label for="whatsapp" class="visuallyHidden">whatsapp</label>
                     </li>
                 </ul>
-                <p><a class="email" href="mailto:info@email.com">info@email.com</a>
+                
                 <div class="address">
+                    <p><a class="email" href="mailto:info@email.com">info@email.com</a>
                     <p>123 - 456 - 7890</p>
                     <p>123 Queen Street West, Unit 10</p>
                     <p>Toronto, Ontario</p>

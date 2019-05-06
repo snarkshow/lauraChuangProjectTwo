@@ -4,20 +4,15 @@ $headingFont: 'Walter Turncoat', cursive;
 $bodyFont:'Roboto', sans-serif;
 
 // FONT SIZE
-$h1Size: 145.2px;
-$h1SizeOther: 121.5px;
-$bodySize: 20px;
 
+$bodySize: 20px;
 
 // LINE HEIGHTS//
 
-$h1Height: 125.6px;
-$h4Height:58px;
 $bodyHeight: 28px;
 
 // LETTER SPACING 
 
-$h4Space: 1.3px;
 $navSpace: 1px;
 $bodySpace: 1px;
 
@@ -50,6 +45,12 @@ $colourBrightAqua: #08fded;
     line-height: 29px;
 }
 
+@mixin h1Homepage($color){
+    color: $color;
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 145.2px
+}
+
 @mixin h1Styles($color){
     color: $color;
     font-family: 'Walter Turncoat', cursive;
@@ -61,12 +62,14 @@ $colourBrightAqua: #08fded;
     color: $color;
     font-family: 'Walter Turncoat', cursive;
     font-size: 45px;
+    line-height: 99.8px;
 }
 @mixin h3Styles($color){
     color: $color;
     font-family: 'Walter Turncoat', cursive;
     font-size: 40px;
-    line-height: 99.8px;
+    letter-spacing: 1.3px;
+    line-height: 58px;
     margin: 0;
 }
 

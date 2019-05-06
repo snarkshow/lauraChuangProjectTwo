@@ -12,3 +12,11 @@ footer{
         margin: 0;
     }
 }
+
+@media (max-width: 320px){
+
+    footer p{
+        font-size: calc(20px * 0.9);
+    }
+
+}

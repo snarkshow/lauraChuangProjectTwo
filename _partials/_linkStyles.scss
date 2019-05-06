@@ -41,4 +41,48 @@
     }
 }
 
+@media (max-width: 1200px){} 
+@media (max-width: 890px){
+
+    .social {
+        align-items: center;
+        display:flex;
+        flex-direction: column;
+    li{
+        margin: 20px 40px 20px 0;
+        a{
+        font-size: 35px;
+        }
+    }
+}
+
+} 
+@media (max-width: 767px){} 
+@media (max-width: 650px){
+    .social {
+        flex-direction: row;
+        li{
+        margin: 30px;
+        }
+    }
+
+    .address{
+        text-align: center;
+        a{
+            line-height: 40px;
+        }
+    }
+
+
+} 
+@media (max-width: 480px){
+
+    .social {
+        li{
+        margin: 20px;
+        }
+    }
+
+} 
+@media (max-width: 320px){}
 

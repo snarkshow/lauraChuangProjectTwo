@@ -10,7 +10,7 @@
     flex-direction: column;
     margin-left: 5%;
     position: relative;
-    top: -100px; right: 0;
+    top: -150px; right: 0;
 }
 
 .blogImage {
@@ -70,9 +70,8 @@
 
 @media (max-width: 1200px){} 
 
-@media (max-width: 890px){} 
+@media (max-width: 890px){
 
-@media (max-width: 767px){
     .blogFlex{
         align-items: center;
         display: flex;
@@ -91,21 +90,23 @@
     .blogImage {
         img{
         box-shadow: -20px 20px $colourBrightAqua;
-    }
+        }
     }
 
     .activities{
         box-shadow: none;
-        padding: 50px;
-        right: 10px;
+        padding: 30px;
+        right: 0px;
     }
-    
-} 
 
-@media (max-width: 650px){
+    .commentsSection{
+        margin: 6%;
+        padding: 0;
+        right: 0px;
+    }
 
-     .activities,
-     .commentsSection{
+    .activities,
+    .commentsSection{
         h2{
             font-size: calc(45px * 0.8);
             text-align: center;
@@ -114,28 +115,21 @@
             font-size: calc(20px * 0.9);
         }
     }
+
+
+} 
+
+@media (max-width: 767px){
+    
+    
+} 
+
+@media (max-width: 650px){
+     
 } 
 @media (max-width: 480px){
 
-    .blogFlex{
-        .blogPost{
-            margin: 0;
-        }
-    }
-
-    .commentsSection{
-        margin: 0 auto;
-        padding: 0;
-        right: 0;
-        .comment{
-            padding: 0 30px;
-        }
-    }
-
-} 
-@media (max-width: 320px){
-
-    .blogFlex{
+     .blogFlex{
         margin: 0 auto;
         padding: 3% 0;
         .blogPost{
@@ -146,7 +140,7 @@
     }
 
     .activities{
-        padding: 25px;
+        padding: 0px;
         right: 0px;
     }
 
@@ -174,8 +168,31 @@
     }
 
     .commentImage{
-    
-    margin: 0 auto; 
+    text-align: left;
+    width: 90px;
 }
+
+    .commentsSection{
+        margin: 0 auto;
+        padding: 0;
+        right: 0;
+        .comment{
+            padding: 0 30px;
+        }
+    }
+
+} 
+@media (max-width: 320px){
+
+   .activities,
+    .commentsSection{
+        h2{
+            font-size: calc(45px * 0.7);
+            text-align: center;
+        }
+        p{
+            font-size: calc(20px * 0.8);
+        }
+    }
 
 }

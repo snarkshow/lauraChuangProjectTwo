@@ -14,6 +14,24 @@ nav ul{
             }
 }
 
+// MOBILE NAV 
+
+input[type="checkbox"] {
+	display: none;  
+}
+
+label[for="toggle"] {
+    @include navStyles($colourGrey);
+    background-color: $colourDarkAqua;
+    border: inset 2px $colourBrightAqua;
+    display: none;
+    padding: 5px 10px;
+    position: absolute;
+    top: 15px; right: 15px;
+    text-align: center;
+    width: 100px;
+}
+
 // HEADER CSS
 
 header{
@@ -38,17 +56,22 @@ header{
     width: 40%;
     }
 
-// HOMEPAGE H1 STYLES
+// H1 STYLES
+
+h1{
+    position: relative;
+    top: 10vh;
+}
 
 .homePage h1{
-    color: $colourGrey;
-    font-family: $headingFont;
-    font-size: $h1Size;
+    @include h1Homepage($colourGrey);
+    margin: 0;
 }
 
 .blog h1,
 .contact h1{
     @include h1Styles($colourGrey);
+    margin: 0;
 }
 
 // MEDIA QUERIES
@@ -69,15 +92,28 @@ header{
         font-size: calc(145.2px * 0.5);
     }
 
-    
-
     .blog h1,
     .contact h1{
         font-size: calc(121.5px * 0.7);
     }
+
+    .homeHeaderImage{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 45%;
+    }
 }
 
 @media (max-width: 767px){
+
+    .homeHeaderImage{
+        position: absolute;
+        top: 45vh;
+        right: 0;
+        width: 55%;
+    }
+
     .homePage h1{
         font-size: calc(145.2px * 0.5);
     }
@@ -89,6 +125,18 @@ header{
 }
 
 @media (max-width: 650px){
+
+    header{
+        &.contact{
+            background-position: center;
+        }
+    }
+
+   nav ul{
+    display: flex;
+    justify-content: center;
+    }
+
     .homePage h1{
         font-size: calc(145.2px * 0.4);
     }
@@ -97,7 +145,7 @@ header{
         position: absolute;
         top: 45vh;
         right: 0;
-        width: 50%;
+        width: 60%;
     }
 
     .blog h1,
@@ -105,49 +153,77 @@ header{
         font-size: calc(121.5px * 0.5);
     }
 
-    nav ul{
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 30px;
-    margin: 0 auto;
-    }
 }
 
 @media (max-width: 480px){
+
+    h1{
+        top: 20vh;
+    }
+
+    .homePage h1,
+    .blog h1{
+        margin-left: 20px;
+    }
 
     .homePage h1{
         font-size: calc(145.2px * 0.5);
     }
 
-    .blog h1,
-    .contact h1{
+    .blog h1{
         font-size: calc(121.5px * 0.6);
     }
-
-
-    .homeHeaderImage{
-        width: 60%;
+    
+    .contact h1{
+        font-size: calc(121.5px * 0.5);
     }
 
-    nav ul{
-        padding: 10px 15px;
-        li{
+    .homeHeaderImage{
+        display: none;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 55px; right: 15px;
+        ul{
+            align-items: flex-end;
+            flex-direction: column;
+            padding: 0;
+            li{
+            background-color:$colourDarkBlue;
+            flex-direction: column;
             padding: 15px 10px;
-            a{
-                font-size: calc(20px * 0.9);
+            width: 100px;
+                a{
+                    font-size: calc(20px * 0.8);
+                }
             }
         }
     }
-    
+
+    input[type="checkbox"]:checked + nav  {
+        display: flex; 
+    }
+
+    label[for="toggle"] {
+        display: block;
+        z-index: 50;
+    }
+
 }
 
 @media (max-width: 320px){
     .homePage h1{
-        font-size: calc(145.2px * 0.4);
+        font-size: calc(145.2px * 0.4   );
     }
-     .blog h1,
-    .contact h1{
+
+     .blog h1{
         font-size: calc(121.5px * 0.5);
+    }
+
+    .contact h1{
+        font-size: calc(121.5px * 0.4);
     }
 }
 
