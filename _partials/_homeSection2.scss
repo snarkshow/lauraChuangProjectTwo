@@ -137,7 +137,7 @@
 @media (max-width: 768px){
 
     .homeSection2{
-        padding: 0;
+        padding: 50px 0;
     }
 
     .homeSectionLeft,
@@ -180,14 +180,18 @@
     .homeSectionLeft{
     img{
         box-shadow: 5px 5px $colourBrightAqua;
+        }
     }
-}
 
-.homeSectionRight{
-    img{
-        box-shadow: -5px 5px $colourBrightAqua;
+    .homeSectionRight{
+        img{
+            box-shadow: -5px 5px $colourBrightAqua;
+        }
     }
-}
 
-} 
-@media (max-width: 320px){}
+    .programsArticle,
+    .locationsArticle{
+        margin: 0px;
+    }
+
+}

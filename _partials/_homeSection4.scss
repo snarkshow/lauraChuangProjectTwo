@@ -44,7 +44,7 @@
 @media (max-width: 890px){
     .eventsSection{
         background-color: $colourDarkAqua;
-        padding: 50px 0;
+        padding: 100px 0;
     }
 
     .eventsFlex{
@@ -78,6 +78,10 @@
 } 
 @media (max-width: 480px){
 
+     .eventsSection{
+        background-color: $colourDarkAqua;
+        padding: 50px 0;
+    }
 
     .eventsFlex{
         .eventsImage{   
