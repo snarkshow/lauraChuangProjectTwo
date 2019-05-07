@@ -404,8 +404,8 @@ label[for="toggle"] {
   border: inset 2px #08fded;
   display: none;
   padding: 5px 10px;
-  position: absolute;
-  top: 15px;
+  position: fixed;
+  top: 25px;
   right: 15px;
   text-align: center;
   width: 100px; }
@@ -514,8 +514,9 @@ h1 {
   nav {
     display: none;
     position: absolute;
-    top: 55px;
-    right: 15px; }
+    top: 65px;
+    right: 15px;
+    z-index: 50; }
     nav ul {
       -webkit-box-align: end;
       -ms-flex-align: end;
@@ -527,6 +528,7 @@ h1 {
       padding: 0; }
       nav ul li {
         background-color: #044779;
+        border-bottom: solid 2px #08fded;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -861,9 +863,12 @@ h1 {
 .eventsFlex {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin: 0 auto; }
   .eventsFlex .eventsImage {
-    padding-right: 50px; }
+    padding-right: 50px;
+    -ms-flex-preferred-size: 35%;
+    flex-basis: 35%; }
     .eventsFlex .eventsImage img {
       -webkit-box-shadow: -20px 20px #08fded;
       box-shadow: -20px 20px #08fded; }

@@ -26,8 +26,8 @@ label[for="toggle"] {
     border: inset 2px $colourBrightAqua;
     display: none;
     padding: 5px 10px;
-    position: absolute;
-    top: 15px; right: 15px;
+    position: fixed;
+    top: 25px; right: 15px;
     text-align: center;
     width: 100px;
 }
@@ -185,17 +185,20 @@ h1{
     nav {
         display: none;
         position: absolute;
-        top: 55px; right: 15px;
+        top: 65px; right: 15px;
+        z-index: 50;
         ul{
             align-items: flex-end;
             flex-direction: column;
             padding: 0;
             li{
             background-color:$colourDarkBlue;
+            border-bottom:  solid 2px $colourBrightAqua;
             flex-direction: column;
             padding: 15px 10px;
             width: 100px;
                 a{
+                    
                     font-size: calc(20px * 0.8);
                 }
             }
