@@ -920,15 +920,15 @@ h1 {
   .eventsSection {
     background-color: #03697c;
     padding: 100px 0; }
-  .eventsFlex {
+  .eventsArticleFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
-    .eventsFlex .eventsImage {
+    .eventsArticleFlex .eventsArticleImage {
       padding: 15px; }
-    .eventsFlex .eventsImage,
-    .eventsFlex .eventsArticle {
+    .eventsArticleFlex .eventsArticleImage,
+    .eventsArticleFlex .eventsArticle {
       margin: 0 auto; }
   .eventsArticle h3 {
     font-size: calc(40px * 0.8);
@@ -944,14 +944,14 @@ h1 {
     font-size: calc(20px * 0.9); } }
 
 @media (max-width: 480px) {
-  .eventsWrapper {
-    width: 95%; }
   .events {
     padding: 50px 15px;
     text-align: left; }
     .events h3 {
       font-size: calc(40px * 0.6);
       line-height: calc(99.8px * 0.4); }
+  .eventsWrapper {
+    width: 95%; }
   .eventsSection {
     background-color: #03697c;
     padding: 50px 0; }
