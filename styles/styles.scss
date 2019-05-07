@@ -9,16 +9,16 @@
 @import '../_partials/_header.scss';
 
 // HOMEPAGE STYLES
-@import '../_partials/_homeSection1.scss';
-@import '../_partials/_homeSection2.scss';
-@import '../_partials/_homeSection3.scss';
-@import '../_partials/_homeSection4.scss';
-@import '../_partials/_homeSection5.scss';
+@import '../_partials/_homeAbout.scss';
+@import '../_partials/_homeNews.scss';
+@import '../_partials/_homeEvents.scss';
+@import '../_partials/_homeGallery.scss';
 
 // BLOG POST STYLES
 @import '../_partials/_blogPost.scss';
-@import '../_partials/_blogsideBar.scss';
+@import '../_partials/_blogSideBar.scss';
 
+// CONTACT PAGE STYLES
 @import '../_partials/_contactPage.scss';
 
 

@@ -1,21 +1,43 @@
+// ROAD TRIPS
+
+.events{
+    background: $colourDarkAqua;
+    padding: 100px 50px;
+    text-align: center;
+    h3{
+        @include h3Styles($colourGrey);
+        margin: 0;
+    }
+    p{
+        @include bodyStyles($colourGrey);
+    }
+    
+}
+
+.eventsWrapper{
+    margin: 0 auto;
+    width: 70%;
+}
+
+
 // FULL BLEED BANNER
 
-.homeBanner{
+.eventsBanner{
     font-size: 0;
     width: 100%;
 }
 
 // EVENTS 
 
-.eventsSection{
+.eventsArticleSection{
     background-color: $colourDarkAqua;
     padding: 100px 0;
 }
 
-.eventsFlex{
+.eventsArticleFlex{
     display: flex;
     margin: 0 auto;
-    .eventsImage{
+    .eventsArticleImage{
         padding-right: 50px;
         flex-basis: 35%;
         img{
@@ -40,8 +62,17 @@
 
 // MEDIA QUERIES
 
-@media (max-width: 1200px){} 
+@media (max-width: 1200px){
+    .homeSection3Wrapper{
+        width: 85%;
+        }
+} 
+
 @media (max-width: 890px){
+    .homeSection3Wrapper{
+        width: 90%;
+    }
+
     .eventsSection{
         background-color: $colourDarkAqua;
         padding: 100px 0;
@@ -68,19 +99,39 @@
         }
     }
 } 
-@media (max-width: 767px){
-
-
-    
-} 
 
 @media (max-width: 650px){
 
+    .homeSection3{
+        h3{
+        font-size: calc($h3Size * 0.8);
+        line-height: calc(99.8px * 0.8);
+        }
+        p{
+        font-size: calc(#{$bodySize} * 0.9);
+        }
+    }
 } 
 
 @media (max-width: 480px){
 
-     .eventsSection{
+    .homeSection3{
+        padding: 50px 15px;
+    }
+
+    .homeSection3Wrapper{
+        width: 95%;
+    }
+
+    .homeSection3{
+        text-align: left;
+        h3{
+        font-size: calc(#{$h3Size} * 0.6);
+        line-height: calc(99.8px * 0.4);
+        }
+    }
+
+    .eventsSection{
         background-color: $colourDarkAqua;
         padding: 50px 0;
     }
@@ -97,5 +148,4 @@
         padding: 10px;
     }
 
-   
 } 

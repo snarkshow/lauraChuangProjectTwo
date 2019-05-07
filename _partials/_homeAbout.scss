@@ -1,4 +1,4 @@
-.homeSection1{
+.aboutSection{
     background-color: $colourDarkAqua;
     padding: 170px 0 150px 0;
 }
@@ -43,7 +43,7 @@
 // MEDIA QUERIES
 
 @media (max-width: 1200px){
-    .homeSection1{
+    .aboutSection{
         padding: 140px 0 120px 0;
     }
 
@@ -52,11 +52,9 @@
     }
 } 
 
-@media (max-width: 890px){} 
-
 @media (max-width: 767px){
 
-    .homeSection1{
+    .aboutSection{
         padding: 120px 0 100px 0;
     }
 
@@ -82,10 +80,9 @@
 } 
 
 @media (max-width: 480px){
-    .homeSection1{
+    .aboutSection{
         padding: 50px 0 50px 0;
     }
-
 
     h2{
     font-size: calc(#{$h2Size} * 0.5);

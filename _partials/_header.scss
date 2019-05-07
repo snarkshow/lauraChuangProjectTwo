@@ -1,6 +1,6 @@
 // SKIP LINK
 
-#skiptocontent a {
+#skipToContent a {
     @include buttonStyles(100%);
     // padding: 6px;
     padding: 5px 15px;
@@ -9,11 +9,11 @@
     left: 0px;
     -webkit-transition: top 1s ease-out;
     text-align: center;
-    transition: top 1s ease-out;
+    transition: top 0.5s ease-out;
     z-index: 100;
 }
 
-#skiptocontent a:focus {
+#skipToContent a:focus {
     position: absolute;
     left: 0px;
     top: 0px;
@@ -21,6 +21,7 @@
     -webkit-transition: top .1s ease-in;
     transition: top .3s ease-in;
 }
+
 
 // NAVBAR STYLES
 
@@ -195,6 +196,12 @@ h1{
 
 @media (max-width: 480px){
 
+
+    #skipToContent a {
+        padding: 15px 15px;
+        top: -75px;
+    }
+
     h1{
         top: 20vh;
     }
@@ -245,7 +252,7 @@ h1{
 
     label[for="toggle"] {
         display: block;
-        z-index: 50;
+        z-index: 10;
     }
 
 }

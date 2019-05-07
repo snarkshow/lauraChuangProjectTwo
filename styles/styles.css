@@ -382,7 +382,7 @@ input, select, textarea {
     padding: 10px;
     width: 100%; } }
 
-#skiptocontent a {
+#skipToContent a {
   background-color: #08fded;
   color: #474bb5;
   font-family: 'Walter Turncoat', cursive;
@@ -395,11 +395,12 @@ input, select, textarea {
   left: 0px;
   -webkit-transition: top 1s ease-out;
   text-align: center;
-  -o-transition: top 1s ease-out;
-  transition: top 1s ease-out;
+  -webkit-transition: top 0.5s ease-out;
+  -o-transition: top 0.5s ease-out;
+  transition: top 0.5s ease-out;
   z-index: 100; }
 
-#skiptocontent a:focus {
+#skipToContent a:focus {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -540,6 +541,9 @@ h1 {
     font-size: calc(121.5px * 0.5); } }
 
 @media (max-width: 480px) {
+  #skipToContent a {
+    padding: 15px 15px;
+    top: -75px; }
   h1 {
     top: 20vh; }
   .homePage h1,
@@ -583,7 +587,7 @@ h1 {
     display: flex; }
   label[for="toggle"] {
     display: block;
-    z-index: 50; } }
+    z-index: 10; } }
 
 @media (max-width: 320px) {
   .blog h1 {
@@ -591,7 +595,7 @@ h1 {
   .contact h1 {
     font-size: calc(121.5px * 0.4); } }
 
-.homeSection1 {
+.aboutSection {
   background-color: #03697c;
   padding: 170px 0 150px 0; }
 
@@ -639,13 +643,13 @@ h1 {
   color: #08fded; }
 
 @media (max-width: 1200px) {
-  .homeSection1 {
+  .aboutSection {
     padding: 140px 0 120px 0; }
   .quickLinksSection h2 {
     font-size: calc(45px * 0.7); } }
 
 @media (max-width: 767px) {
-  .homeSection1 {
+  .aboutSection {
     padding: 120px 0 100px 0; }
   .quickLinksSection h2 {
     font-size: calc(45px * 0.6); }
@@ -666,48 +670,48 @@ h1 {
       width: 95%; } }
 
 @media (max-width: 480px) {
-  .homeSection1 {
+  .aboutSection {
     padding: 50px 0 50px 0; }
   h2 {
     font-size: calc(45px * 0.5); } }
 
-.homeSection2 {
+.newsSection {
   background-color: #474bb5;
   padding: 50px 0; }
 
-.homeSectionLeft,
-.homeSectionRight {
+.newsSectionTop,
+.newsSectionBottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .homeSectionLeft .homeSectionLeftImage,
-  .homeSectionLeft .homeSectionRightImage,
-  .homeSectionLeft .programsArticle,
-  .homeSectionLeft .locationsArticle,
-  .homeSectionRight .homeSectionLeftImage,
-  .homeSectionRight .homeSectionRightImage,
-  .homeSectionRight .programsArticle,
-  .homeSectionRight .locationsArticle {
+  .newsSectionTop .newsTopImage,
+  .newsSectionTop .newsBottomImage,
+  .newsSectionTop .programsArticle,
+  .newsSectionTop .locationsArticle,
+  .newsSectionBottom .newsTopImage,
+  .newsSectionBottom .newsBottomImage,
+  .newsSectionBottom .programsArticle,
+  .newsSectionBottom .locationsArticle {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%; }
-  .homeSectionLeft .homeSectionLeftImage,
-  .homeSectionRight .homeSectionLeftImage {
+  .newsSectionTop .newsTopImage,
+  .newsSectionBottom .newsTopImage {
     position: relative;
     top: -90px;
     left: -10%; }
-  .homeSectionLeft .homeSectionRightImage,
-  .homeSectionRight .homeSectionRightImage {
+  .newsSectionTop .newsBottomImage,
+  .newsSectionBottom .newsBottomImage {
     position: relative;
     bottom: -70px;
     right: -9%; }
 
-.homeSectionLeft img {
+.newsSectionTop img {
   -webkit-box-shadow: 20px 20px #08fded;
   box-shadow: 20px 20px #08fded;
   display: inline-block;
   margin: 0; }
 
-.homeSectionRight img {
+.newsSectionBottom img {
   -webkit-box-shadow: -20px 20px #08fded;
   box-shadow: -20px 20px #08fded;
   display: inline-block;
@@ -739,19 +743,19 @@ h1 {
   line-height: 28px; }
 
 @media (max-width: 1250px) {
-  .homeSection2 {
+  .newsSection {
     background-color: #474bb5;
     padding: 50px 0; }
-  .homeSectionLeft .homeSectionLeftImage,
-  .homeSectionLeft .homeSectionRightImage,
-  .homeSectionRight .homeSectionLeftImage,
-  .homeSectionRight .homeSectionRightImage {
+  .newsSectionTop .newsTopImage,
+  .newsSectionTop .newsBottomImage,
+  .newsSectionBottom .newsTopImage,
+  .newsSectionBottom .newsBottomImage {
     -ms-flex-preferred-size: 60%;
     flex-basis: 60%; }
-  .homeSectionLeft .programsArticle,
-  .homeSectionLeft .locationsArticle,
-  .homeSectionRight .programsArticle,
-  .homeSectionRight .locationsArticle {
+  .newsSectionTop .programsArticle,
+  .newsSectionTop .locationsArticle,
+  .newsSectionBottom .programsArticle,
+  .newsSectionBottom .locationsArticle {
     -ms-flex-preferred-size: 40%;
     flex-basis: 40%; }
   .programsArticle {
@@ -768,61 +772,63 @@ h1 {
     font-size: calc(20px * 0.9); } }
 
 @media (max-width: 1100px) {
-  .homeSection2 {
-    padding: 20px 0; }
-  .homeSectionLeft .homeSectionLeftImage,
-  .homeSectionRight .homeSectionLeftImage {
+  .newsSection {
+    padding: 50px 0; }
+  .newsSectionTop .newsTopImage,
+  .newsSectionBottom .newsTopImage {
     position: relative;
-    top: -50px;
+    top: 20px;
     left: -10%; }
-  .homeSectionLeft .homeSectionRightImage,
-  .homeSectionRight .homeSectionRightImage {
+  .newsSectionTop .newsBottomImage,
+  .newsSectionBottom .newsBottomImage {
     position: relative;
     bottom: -50px;
-    right: -8%; } }
+    right: -8.5%; } }
 
 @media (max-width: 890px) {
-  .homeSectionLeft .homeSectionLeftImage,
-  .homeSectionLeft .homeSectionRightImage,
-  .homeSectionRight .homeSectionLeftImage,
-  .homeSectionRight .homeSectionRightImage {
+  .newsSectionTop .newsTopImage,
+  .newsSectionTop .newsBottomImage,
+  .newsSectionBottom .newsTopImage,
+  .newsSectionBottom .newsBottomImage {
     -ms-flex-preferred-size: 55%;
-    flex-basis: 55%; }
-  .homeSectionLeft .programsArticle,
-  .homeSectionLeft .locationsArticle,
-  .homeSectionRight .programsArticle,
-  .homeSectionRight .locationsArticle {
+    flex-basis: 55%;
+    bottom: -100px;
+    right: -8.5%; }
+  .newsSectionTop .programsArticle,
+  .newsSectionTop .locationsArticle,
+  .newsSectionBottom .programsArticle,
+  .newsSectionBottom .locationsArticle {
     -ms-flex-preferred-size: 45%;
     flex-basis: 45%; } }
 
 @media (max-width: 768px) {
-  .homeSection2 {
+  .newsSection {
     padding: 50px 0; }
-  .homeSectionLeft,
-  .homeSectionRight {
+  .newsSectionTop,
+  .newsSectionBottom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
-    .homeSectionLeft .homeSectionRightImage,
-    .homeSectionRight .homeSectionRightImage {
+    .newsSectionTop .newsBottomImage,
+    .newsSectionBottom .newsBottomImage {
       -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
       order: 1; }
-    .homeSectionLeft .locationsArticle,
-    .homeSectionRight .locationsArticle {
+    .newsSectionTop .locationsArticle,
+    .newsSectionBottom .locationsArticle {
       -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
       order: 2; }
-  .homeSectionLeft .homeSectionLeftImage,
-  .homeSectionRight .homeSectionLeftImage {
+  .newsSectionTop .newsTopImage,
+  .newsSectionBottom .newsTopImage {
     padding-top: 50px;
     position: relative;
     margin: 0 auto;
     top: 0px;
     left: 0; }
-  .homeSectionLeft .homeSectionRightImage,
-  .homeSectionRight .homeSectionRightImage {
+  .newsSectionTop .newsBottomImage,
+  .newsSectionBottom .newsBottomImage {
     position: relative;
     margin: 0 auto;
     top: 0px;
@@ -834,25 +840,21 @@ h1 {
     text-align: left; } }
 
 @media (max-width: 480px) {
-  .homeSectionLeft img {
+  .newsSectionTop img {
     -webkit-box-shadow: 5px 5px #08fded;
     box-shadow: 5px 5px #08fded; }
-  .homeSectionRight img {
+  .newsSectionBottom img {
     -webkit-box-shadow: -5px 5px #08fded;
     box-shadow: -5px 5px #08fded; }
   .programsArticle,
   .locationsArticle {
     margin: 0px; } }
 
-.homeSection3Wrapper {
-  margin: 0 auto;
-  width: 70%; }
-
-.homeSection3 {
+.events {
   background: #03697c;
   padding: 100px 50px;
   text-align: center; }
-  .homeSection3 h3 {
+  .events h3 {
     color: #f3faff;
     font-family: 'Walter Turncoat', cursive;
     font-size: 40px;
@@ -860,57 +862,35 @@ h1 {
     line-height: 58px;
     margin: 0;
     margin: 0; }
-  .homeSection3 p {
+  .events p {
     color: #f3faff;
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     letter-spacing: 1px;
     line-height: 28px; }
 
-@media (max-width: 1200px) {
-  .homeSection3Wrapper {
-    width: 85%; } }
+.eventsWrapper {
+  margin: 0 auto;
+  width: 70%; }
 
-@media (max-width: 890px) {
-  .homeSection3Wrapper {
-    width: 90%; } }
-
-@media (max-width: 650px) {
-  .homeSection3 h3 {
-    font-size: calc($h3Size * 0.8);
-    line-height: calc(99.8px * 0.8); }
-  .homeSection3 p {
-    font-size: calc(20px * 0.9); } }
-
-@media (max-width: 480px) {
-  .homeSection3 {
-    padding: 50px 15px; }
-  .homeSection3Wrapper {
-    width: 95%; }
-  .homeSection3 {
-    text-align: left; }
-    .homeSection3 h3 {
-      font-size: calc(40px * 0.6);
-      line-height: calc(99.8px * 0.4); } }
-
-.homeBanner {
+.eventsBanner {
   font-size: 0;
   width: 100%; }
 
-.eventsSection {
+.eventsArticleSection {
   background-color: #03697c;
   padding: 100px 0; }
 
-.eventsFlex {
+.eventsArticleFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto; }
-  .eventsFlex .eventsImage {
+  .eventsArticleFlex .eventsArticleImage {
     padding-right: 50px;
     -ms-flex-preferred-size: 35%;
     flex-basis: 35%; }
-    .eventsFlex .eventsImage img {
+    .eventsArticleFlex .eventsArticleImage img {
       -webkit-box-shadow: -20px 20px #08fded;
       box-shadow: -20px 20px #08fded; }
 
@@ -930,7 +910,13 @@ h1 {
     letter-spacing: 1px;
     line-height: 28px; }
 
+@media (max-width: 1200px) {
+  .homeSection3Wrapper {
+    width: 85%; } }
+
 @media (max-width: 890px) {
+  .homeSection3Wrapper {
+    width: 90%; }
   .eventsSection {
     background-color: #03697c;
     padding: 100px 0; }
@@ -950,7 +936,23 @@ h1 {
   .eventsArticle p {
     font-size: calc(20px * 0.9); } }
 
+@media (max-width: 650px) {
+  .homeSection3 h3 {
+    font-size: calc($h3Size * 0.8);
+    line-height: calc(99.8px * 0.8); }
+  .homeSection3 p {
+    font-size: calc(20px * 0.9); } }
+
 @media (max-width: 480px) {
+  .homeSection3 {
+    padding: 50px 15px; }
+  .homeSection3Wrapper {
+    width: 95%; }
+  .homeSection3 {
+    text-align: left; }
+    .homeSection3 h3 {
+      font-size: calc(40px * 0.6);
+      line-height: calc(99.8px * 0.4); }
   .eventsSection {
     background-color: #03697c;
     padding: 50px 0; }

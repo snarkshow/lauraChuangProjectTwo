@@ -1,29 +1,29 @@
-.homeSection2{
+.newsSection{
     background-color: $colourPurple;
     padding: 50px 0;   
     }
 
 
-.homeSectionLeft,
-.homeSectionRight{
+.newsSectionTop,
+.newsSectionBottom{
     display: flex;
-    .homeSectionLeftImage,
-    .homeSectionRightImage,
+    .newsTopImage,
+    .newsBottomImage,
     .programsArticle,
     .locationsArticle{
         flex-basis: 50%;
     }
-    .homeSectionLeftImage{
+    .newsTopImage{
         position: relative;
         top: -90px; left: -10%;
     }
-    .homeSectionRightImage{
+    .newsBottomImage{
         position: relative;
         bottom: -70px; right: -9%;
     }
 }
 
-.homeSectionLeft{
+.newsSectionTop{
     img{
         box-shadow: 20px 20px $colourBrightAqua;
         display: inline-block;
@@ -31,7 +31,7 @@
     }
 }
 
-.homeSectionRight{
+.newsSectionBottom{
     img{
         box-shadow: -20px 20px $colourBrightAqua;
         display: inline-block;
@@ -63,15 +63,15 @@
 
 @media (max-width: 1250px){
 
-    .homeSection2{
+    .newsSection{
     background-color: $colourPurple;
     padding: 50px 0;   
     }
 
-    .homeSectionLeft,
-    .homeSectionRight{
-        .homeSectionLeftImage,
-        .homeSectionRightImage{
+    .newsSectionTop,
+    .newsSectionBottom{
+        .newsTopImage,
+        .newsBottomImage{
             flex-basis: 60%
         }
         .programsArticle,
@@ -91,40 +91,41 @@
 
     .programsArticle,
     .locationsArticle{
-    h3{
-        font-size: calc(40px * 0.8);
-        line-height: calc(99.8px * 0.8);
+        h3{
+            font-size: calc(40px * 0.8);
+            line-height: calc(99.8px * 0.8);
+        }
+        p{
+            font-size: calc(#{$bodySize} * 0.9);
+        }
     }
-    p{
-        font-size: calc(#{$bodySize} * 0.9);
-    }
-}
 }
 
 @media (max-width: 1100px){
-    .homeSection2{
-    padding: 20px 0;   
+    .newsSection{
+        padding: 50px 0;   
     }
 
-    .homeSectionLeft,
-    .homeSectionRight{
-        .homeSectionLeftImage{
+    .newsSectionTop,
+    .newsSectionBottom{
+        .newsTopImage{
             position: relative;
-            top: -50px; left: -10%;
+            top: 20px; left: -10%;
         }
-        .homeSectionRightImage{
+        .newsBottomImage{
             position: relative;
-            bottom: -50px; right: -8%;
+            bottom: -50px; right: -8.5%;
         }
     }
 
 } 
 @media (max-width: 890px){
-    .homeSectionLeft,
-    .homeSectionRight{
-        .homeSectionLeftImage,
-        .homeSectionRightImage{
-            flex-basis: 55%
+    .newsSectionTop,
+    .newsSectionBottom{
+        .newsTopImage,
+        .newsBottomImage{
+            flex-basis: 55%;
+            bottom: -100px; right: -8.5%;
         }
         .programsArticle,
         .locationsArticle{
@@ -136,14 +137,14 @@
 
 @media (max-width: 768px){
 
-    .homeSection2{
+    .newsSection{
         padding: 50px 0;
     }
 
-    .homeSectionLeft,
-    .homeSectionRight{
+    .newsSectionTop,
+    .newsSectionBottom{
         flex-direction: column;
-        .homeSectionRightImage{
+        .newsBottomImage{
             order: 1;
         }
         .locationsArticle{
@@ -151,15 +152,15 @@
         }
     }
 
-    .homeSectionLeft,
-    .homeSectionRight{
-        .homeSectionLeftImage{
+    .newsSectionTop,
+    .newsSectionBottom{
+        .newsTopImage{
             padding-top: 50px;
             position: relative;
             margin: 0 auto; 
             top: 0px; left: 0;
         }
-        .homeSectionRightImage{
+        .newsBottomImage{
             position: relative;
             margin: 0 auto; 
             top: 0px; left: 0;
@@ -177,13 +178,13 @@
 @media (max-width: 650px){} 
 @media (max-width: 480px){
 
-    .homeSectionLeft{
-    img{
-        box-shadow: 5px 5px $colourBrightAqua;
+    .newsSectionTop{
+        img{
+            box-shadow: 5px 5px $colourBrightAqua;
+            }
         }
-    }
 
-    .homeSectionRight{
+    .newsSectionBottom{
         img{
             box-shadow: -5px 5px $colourBrightAqua;
         }
