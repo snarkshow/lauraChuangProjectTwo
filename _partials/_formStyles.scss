@@ -24,6 +24,13 @@ textarea{
     &::placeholder{
         @include bodyStyles($colourGrey);
     }
+    &:focus{
+        box-shadow: 0 0 10px $colourBrightAqua;
+    }
+}
+
+input, select, textarea{
+    color: $colourGrey;
 }
 
 // BLOG FORM STYLES

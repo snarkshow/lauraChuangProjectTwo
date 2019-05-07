@@ -9,7 +9,7 @@
     h3{
         color: $colourGrey;
         font-family: $headingFont;
-        font-size: 30px;
+        font-size: $h3Size;
     }
     p{
         @include bodyStyles($colourGrey);
@@ -37,7 +37,7 @@ a{
     .sideBar{
         p,
         a{
-            font-size: calc(20px * 0.9);
+            font-size: calc(#{$bodySize} * 0.9);
         }
         a{
             white-space: nowrap;
@@ -55,7 +55,7 @@ a{
     .sideBar{
         p,
         a{
-        font-size: calc(20px * 0.8);
+        font-size: calc(#{$bodySize}  * 0.8);
         }
     }
 

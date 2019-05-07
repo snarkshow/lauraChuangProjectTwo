@@ -48,7 +48,7 @@
     }
 
     .quickLinksSection h2{
-        font-size: calc(45px * 0.7);
+        font-size: calc(#{$h2Size} * 0.7);
     }
 } 
 
@@ -62,10 +62,10 @@
 
     .quickLinksSection{
         h2{
-        font-size: calc(45px * 0.6);
+        font-size: calc(#{$h2Size} * 0.6);
         }   
         p{
-        font-size: calc(20px * 0.9);
+        font-size: calc(#{$bodySize} * 0.9);
         }
     }
 } 
@@ -88,9 +88,8 @@
 
 
     h2{
-    font-size: calc(45px * 0.5);
+    font-size: calc(#{$h2Size} * 0.5);
     }   
 
 
 } 
-@media (max-width: 320px){}

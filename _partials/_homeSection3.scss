@@ -37,11 +37,11 @@
 @media (max-width: 650px){
     .homeSection3{
         h3{
-        font-size: calc(40px * 0.8);
+        font-size: calc($h3Size * 0.8);
         line-height: calc(99.8px * 0.8);
         }
         p{
-        font-size: calc(20px * 0.9);
+        font-size: calc(#{$bodySize} * 0.9);
         }
     }
 } 
@@ -56,7 +56,7 @@
     .homeSection3{
         text-align: left;
         h3{
-        font-size: calc(40px * 0.6);
+        font-size: calc(#{$h3Size} * 0.6);
         line-height: calc(99.8px * 0.4);
         }
         p{

@@ -1,3 +1,27 @@
+// SKIP LINK
+
+#skiptocontent a {
+    @include buttonStyles(100%);
+    // padding: 6px;
+    padding: 5px 15px;
+    position: absolute;
+    top: -55px;
+    left: 0px;
+    -webkit-transition: top 1s ease-out;
+    text-align: center;
+    transition: top 1s ease-out;
+    z-index: 100;
+}
+
+#skiptocontent a:focus {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    outline-color: transparent;
+    -webkit-transition: top .1s ease-in;
+    transition: top .3s ease-in;
+}
+
 // NAVBAR STYLES
 
 nav ul{
@@ -17,7 +41,7 @@ nav ul{
 // MOBILE NAV 
 
 input[type="checkbox"] {
-	display: none;  
+	opacity: 0;
 }
 
 label[for="toggle"] {
@@ -79,18 +103,18 @@ h1{
 @media (max-width: 1300px){
 
     .homePage h1{
-        font-size: calc(145.2px * 0.8);
+        font-size: calc(#{$homepageH1Size} * 0.8);
     }
 }
 
 @media (max-width: 1200px){
     .homePage h1{
-        font-size: calc(145.2px * 0.7);
+        font-size: calc(#{$homepageH1Size} * 0.7);
     }
 
     .blog h1,
     .contact h1{
-        font-size: calc(121.5px * 0.9);
+        font-size: calc(#{$otherpagesH1Size} * 0.9);
     }
 }
 
@@ -103,12 +127,12 @@ h1{
 }
 @media (max-width: 890px){
     .homePage h1{
-        font-size: calc(145.2px * 0.5);
+        font-size: calc(#{$homepageH1Size} * 0.5);
     }
 
     .blog h1,
     .contact h1{
-        font-size: calc(121.5px * 0.7);
+        font-size: calc(#{$otherpagesH1Size} * 0.7);
     }
 
     .homeHeaderImage{
@@ -129,12 +153,12 @@ h1{
     }
 
     .homePage h1{
-        font-size: calc(145.2px * 0.5);
+        font-size: calc(#{$homepageH1Size} * 0.5);
     }
 
     .blog h1,
     .contact h1{
-        font-size: calc(121.5px * 0.7);
+        font-size: calc(#{$otherpagesH1Size} * 0.7);
     }
 }
 
@@ -146,13 +170,13 @@ h1{
         }
     }
 
-   nav ul{
-    display: flex;
-    justify-content: center;
+    nav ul{
+        display: flex;
+        justify-content: center;
     }
 
     .homePage h1{
-        font-size: calc(145.2px * 0.4);
+        font-size: calc(#{$homepageH1Size} * 0.4);
     }
 
     .homeHeaderImage{
@@ -164,7 +188,7 @@ h1{
 
     .blog h1,
     .contact h1{
-        font-size: calc(121.5px * 0.5);
+        font-size: calc(#{$otherpagesH1Size} * 0.5);
     }
 
 }
@@ -181,15 +205,11 @@ h1{
     }
 
     .homePage h1{
-        font-size: calc(145.2px * 0.4);
+        font-size: calc(#{$homepageH1Size} * 0.4);
     }
 
     .blog h1{
-        font-size: calc(121.5px * 0.6);
-    }
-    
-    .contact h1{
-        font-size: calc(121.5px * 0.5);
+        font-size: calc(#{$otherpagesH1Size} * 0.6);
     }
 
     .homeHeaderImage{
@@ -213,7 +233,7 @@ h1{
             width: 100px;
                 a{
                     
-                    font-size: calc(20px * 0.8);
+                    font-size: calc(#{$bodySize} * 0.8);
                 }
             }
         }
@@ -234,11 +254,11 @@ h1{
 
 
      .blog h1{
-        font-size: calc(121.5px * 0.5);
+        font-size: calc(#{$otherpagesH1Size} * 0.5);
     }
 
     .contact h1{
-        font-size: calc(121.5px * 0.4);
+        font-size: calc(#{$otherpagesH1Size} * 0.4);
     }
 }
 

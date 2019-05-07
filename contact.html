@@ -38,11 +38,14 @@
             <form action="">
                 <div class="form">
                     <div class="formInput contactFormInput">
+                        <label for="name" class="visuallyHidden">Name</label>
                         <input type="text" name="name" id="name" placeholder="Name">
+                        <label for="email" class="visuallyHidden">Email Address</label>
                         <input type="email" name="email" id="email" placeholder="Email address">
                     </div>
                     <div class="formText contactFormText">
-                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Message"></textarea>
+                        <label for="message" class="visuallyHidden">Type your message here</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
                     </div>
                     <button type="submit" class="submitButton">Submit</button>
                 </div>

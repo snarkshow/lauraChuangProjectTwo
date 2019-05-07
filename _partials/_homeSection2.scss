@@ -96,7 +96,7 @@
         line-height: calc(99.8px * 0.8);
     }
     p{
-        font-size: calc(20px * 0.9);
+        font-size: calc(#{$bodySize} * 0.9);
     }
 }
 }

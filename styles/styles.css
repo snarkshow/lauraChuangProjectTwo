@@ -297,6 +297,13 @@ textarea {
     font-size: 20px;
     letter-spacing: 1px;
     line-height: 28px; }
+  input:focus,
+  textarea:focus {
+    -webkit-box-shadow: 0 0 10px #08fded;
+    box-shadow: 0 0 10px #08fded; }
+
+input, select, textarea {
+  color: #f3faff; }
 
 .blogFormInput input {
   border: none;
@@ -375,6 +382,33 @@ textarea {
     padding: 10px;
     width: 100%; } }
 
+#skiptocontent a {
+  background-color: #08fded;
+  color: #474bb5;
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 25.4px;
+  line-height: 41.6px;
+  width: 100%;
+  padding: 5px 15px;
+  position: absolute;
+  top: -55px;
+  left: 0px;
+  -webkit-transition: top 1s ease-out;
+  text-align: center;
+  -o-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 100; }
+
+#skiptocontent a:focus {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  outline-color: transparent;
+  -webkit-transition: top .1s ease-in;
+  -webkit-transition: top .3s ease-in;
+  -o-transition: top .3s ease-in;
+  transition: top .3s ease-in; }
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -392,7 +426,7 @@ nav ul {
     line-height: 29px; }
 
 input[type="checkbox"] {
-  display: none; }
+  opacity: 0; }
 
 label[for="toggle"] {
   color: #f3faff;
@@ -515,8 +549,6 @@ h1 {
     font-size: calc(145.2px * 0.4); }
   .blog h1 {
     font-size: calc(121.5px * 0.6); }
-  .contact h1 {
-    font-size: calc(121.5px * 0.5); }
   .homeHeaderImage {
     display: none; }
   nav {
@@ -845,7 +877,7 @@ h1 {
 
 @media (max-width: 650px) {
   .homeSection3 h3 {
-    font-size: calc(40px * 0.8);
+    font-size: calc($h3Size * 0.8);
     line-height: calc(99.8px * 0.8); }
   .homeSection3 p {
     font-size: calc(20px * 0.9); } }
@@ -1099,9 +1131,6 @@ h1 {
   .commentsSection h2 {
     font-size: calc(45px * 0.6);
     text-align: center; }
-  .activities p,
-  .commentsSection p {
-    font-size: calc(20px * 0.9); }
   .blogImage img {
     -webkit-box-shadow: -5px 5px #08fded;
     box-shadow: -5px 5px #08fded; }
@@ -1146,7 +1175,7 @@ h1 {
   .sideBar h3 {
     color: #f3faff;
     font-family: "Walter Turncoat", cursive;
-    font-size: 30px; }
+    font-size: 40px; }
   .sideBar p {
     color: #f3faff;
     font-family: "Roboto", sans-serif;
@@ -1185,7 +1214,7 @@ a {
 @media (max-width: 1100px) {
   .sideBar p,
   .sideBar a {
-    font-size: calc(20px * 0.8); }
+    font-size: calc(20px  * 0.8); }
   .sideBarImage {
     top: -20px;
     left: -40%; } }
@@ -1327,8 +1356,6 @@ a {
     justify-content: space-between;
     padding: 30px 0;
     margin: 0; }
-    .contactInfoWrapper p {
-      font-size: calc(20px * 0.9); }
   .contactInfo {
     padding: 20px; }
   .social {
@@ -1336,7 +1363,7 @@ a {
 
 @media (max-width: 480px) {
   .contactInfoWrapper p {
-    font-size: calc(20px * 0.8); }
+    font-size: calc(20px  * 0.8); }
   .contactFlex {
     padding: 20px; } }
 

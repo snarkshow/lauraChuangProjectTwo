@@ -108,11 +108,11 @@
     .activities,
     .commentsSection{
         h2{
-            font-size: calc(45px * 0.8);
+            font-size: calc(#{$h2Size} * 0.8);
             text-align: center;
         }
         p{
-            font-size: calc(20px * 0.9);
+            font-size: calc(#{$bodySize} * 0.9);
         }
     }
 
@@ -147,11 +147,8 @@
     .activities,
     .commentsSection{
         h2{
-            font-size: calc(45px * 0.6);
+            font-size: calc(#{$h2Size} * 0.6);
             text-align: center;
-        }
-        p{
-            font-size: calc(20px * 0.9);
         }
     }
 
@@ -187,11 +184,11 @@
    .activities,
     .commentsSection{
         h2{
-            font-size: calc(45px * 0.7);
+            font-size: calc(#{$h2Size} * 0.7);
             text-align: center;
         }
         p{
-            font-size: calc(20px * 0.8);
+            font-size: calc(#{$bodySize} * 0.8);
         }
     }
 
