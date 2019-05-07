@@ -48,16 +48,16 @@
         align-items: center;
         display:flex;
         flex-direction: column;
-    li{
-        margin: 20px 40px 20px 0;
-        a{
-        font-size: 35px;
-        }
+        li{
+            margin: 20px 40px 20px 0;
+            a{
+                font-size: 35px;
+            }
+        }   
     }
-}
 
 } 
-@media (max-width: 767px){} 
+
 @media (max-width: 650px){
     .social {
         flex-direction: row;

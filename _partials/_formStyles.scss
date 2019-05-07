@@ -99,34 +99,30 @@ input, select, textarea{
      }
 }
 
-@media (max-width: 950px){
 
-
-
-} 
 @media (max-width: 890px){
 
     .contactForm{
         box-shadow: 5px 5px $colourBrightAqua;
         margin: 0 auto;
-        top: 40px; right: 0px;
+        top: 40px; right: 0;
         width: 90%;
     }
 
 } 
-@media (max-width: 767px){} 
+
 @media (max-width: 650px){
-    .formInput.contactFormInput{
+    .contactFormInput{
         flex-direction: column;
     }
 } 
 
 @media (max-width: 480px){
     .form{
-        margin: 0px;
+        margin: 0;
     }
 
-    .formInput.blogFormInput{
+    .blogFormInput{
         flex-direction: column;
     }
 
@@ -136,7 +132,3 @@ input, select, textarea{
     }
 
 } 
-@media (max-width: 320px){
-
-    
-}

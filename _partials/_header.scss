@@ -2,11 +2,10 @@
 
 #skipToContent a {
     @include buttonStyles(100%);
-    // padding: 6px;
     padding: 5px 15px;
     position: absolute;
     top: -55px;
-    left: 0px;
+    left: 0;
     -webkit-transition: top 1s ease-out;
     text-align: center;
     transition: top 0.5s ease-out;
@@ -15,8 +14,8 @@
 
 #skipToContent a:focus {
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     outline-color: transparent;
     -webkit-transition: top .1s ease-in;
     transition: top .3s ease-in;
@@ -64,13 +63,13 @@ header{
     background-size: cover;
     height: 70vh;
     &.homePage{
-        background-image:url("../FunPlace-final-assets/home-header.jpg");    
+        background-image:url("../FunPlaceAssets/homeHeader.jpg");    
     }
     &.blog{
-        background-image:url("../FunPlace-final-assets/blog-header.jpg");
+        background-image:url("../FunPlaceAssets/blogHeader.jpg");
     }
     &.contact{
-        background-image:url("../FunPlace-final-assets/contact-header.jpg");
+        background-image:url("../FunPlaceAssets/contactHeader.jpg");
     }
 }
 
@@ -196,7 +195,6 @@ h1{
 
 @media (max-width: 480px){
 
-
     #skipToContent a {
         padding: 15px 15px;
         top: -75px;
@@ -258,7 +256,6 @@ h1{
 }
 
 @media (max-width: 320px){
-
 
      .blog h1{
         font-size: calc(#{$otherpagesH1Size} * 0.5);

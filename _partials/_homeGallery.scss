@@ -19,13 +19,13 @@
 
 @media (max-width: 650px){
 	.galleryContent {
-	display: flex;
-	flex-direction: column;
+		display: flex;
+		flex-direction: column;
 	}
 	
 	.gallery .galleryItem {
-	width: calc(100% - 30px);
-	margin: 15px;
+		width: calc(100% - 30px);
+		margin: 15px;
 	}
 
 }

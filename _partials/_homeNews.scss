@@ -64,8 +64,8 @@
 @media (max-width: 1250px){
 
     .newsSection{
-    background-color: $colourPurple;
-    padding: 50px 0;   
+        background-color: $colourPurple;
+        padding: 50px 0;   
     }
 
     .newsSectionTop,
@@ -76,7 +76,7 @@
         }
         .programsArticle,
         .locationsArticle{
-        flex-basis: 40%;
+            flex-basis: 40%;
         }
     }
 
@@ -119,6 +119,7 @@
     }
 
 } 
+
 @media (max-width: 890px){
     .newsSectionTop,
     .newsSectionBottom{
@@ -158,12 +159,12 @@
             padding-top: 50px;
             position: relative;
             margin: 0 auto; 
-            top: 0px; left: 0;
+            top: 0; left: 0;
         }
         .newsBottomImage{
             position: relative;
             margin: 0 auto; 
-            top: 0px; left: 0;
+            top: 0; left: 0;
         }
     }
 
@@ -175,7 +176,7 @@
     }
 
 } 
-@media (max-width: 650px){} 
+
 @media (max-width: 480px){
 
     .newsSectionTop{
@@ -192,7 +193,7 @@
 
     .programsArticle,
     .locationsArticle{
-        margin: 0px;
+        margin: 0;
     }
 
 }

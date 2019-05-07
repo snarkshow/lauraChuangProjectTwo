@@ -25,6 +25,8 @@
     margin: 5px 0;
 }
 
+// MEDIA QUERIES
+
 @media (max-width: 1100px){
 
     .contactInfo{
@@ -55,17 +57,14 @@
         padding: 50px 0;
     }
 
-} 
-@media (max-width: 767px){} 
+}
+
 @media (max-width: 650px){
     .contactInfoWrapper {
         flex-direction: column;
         justify-content: space-between;
         padding: 30px 0;
-        margin: 0 ;
-        // p{
-        //     font-size: calc(20px * 0.9);
-        // }
+        margin: 0;
     }
 
     .contactInfo{
@@ -76,6 +75,7 @@
         margin: 0 10px;
     }
 } 
+
 @media (max-width: 480px){
 
     .contactInfoWrapper {
@@ -89,8 +89,3 @@
     }
     
 } 
-@media (max-width: 320px){
-
-    
-
-}

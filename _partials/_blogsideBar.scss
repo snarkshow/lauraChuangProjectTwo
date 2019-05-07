@@ -32,6 +32,8 @@ a{
     @include bodyStyles($colourGrey);
 }
 
+// MEDIA QUERIES
+
 @media (max-width: 1200px){
 
     .sideBar{
@@ -45,9 +47,8 @@ a{
     }
 
     .sideBarImage{
-    top: -20px; left: -35%;
+        top: -20px; left: -35%;
     }   
-
 
 } 
 @media (max-width: 1100px){
@@ -63,8 +64,8 @@ a{
         top: -20px; left: -40%;
     }   
 
-
 } 
+
 @media (max-width: 890px){
 
     .sideBar{
@@ -89,16 +90,13 @@ a{
 
     .sideBarImage{
         position: relative;
-        top: 0px; left: 0%;
+        top: 0; left: 0;
         width: 100%;
     }
 
-
 } 
 
-@media (max-width: 767px){
-    
-} 
+
 @media (max-width: 650px){
 
     .sideBar{
@@ -121,6 +119,7 @@ a{
     }
 
 } 
+
 @media (max-width: 480px){
 
     .sideBar{
@@ -135,7 +134,3 @@ a{
     }
 
 } 
-@media (max-width: 320px){
-
-    
-}
