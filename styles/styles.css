@@ -944,19 +944,18 @@ h1 {
     font-size: calc(20px * 0.9); } }
 
 @media (max-width: 480px) {
-  .homeSection3 {
-    padding: 50px 15px; }
-  .homeSection3Wrapper {
+  .eventsWrapper {
     width: 95%; }
-  .homeSection3 {
+  .events {
+    padding: 50px 15px;
     text-align: left; }
-    .homeSection3 h3 {
+    .events h3 {
       font-size: calc(40px * 0.6);
       line-height: calc(99.8px * 0.4); }
   .eventsSection {
     background-color: #03697c;
     padding: 50px 0; }
-  .eventsFlex .eventsImage img {
+  .eventsArticleFlex .eventsArticleImage img {
     -webkit-box-shadow: -5px 5px #08fded;
     box-shadow: -5px 5px #08fded; }
   .eventsArticle {

@@ -115,15 +115,12 @@
 
 @media (max-width: 480px){
 
-    .homeSection3{
-        padding: 50px 15px;
-    }
-
-    .homeSection3Wrapper{
+    .eventsWrapper{
         width: 95%;
     }
 
-    .homeSection3{
+    .events{
+        padding: 50px 15px;
         text-align: left;
         h3{
         font-size: calc(#{$h3Size} * 0.6);
@@ -136,8 +133,8 @@
         padding: 50px 0;
     }
 
-    .eventsFlex{
-        .eventsImage{   
+    .eventsArticleFlex{
+        .eventsArticleImage{   
           img{
             box-shadow: -5px 5px $colourBrightAqua;
             }
