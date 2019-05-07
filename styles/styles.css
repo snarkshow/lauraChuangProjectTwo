@@ -450,11 +450,11 @@ header {
   background-size: cover;
   height: 70vh; }
   header.homePage {
-    background-image: url("../FunPlace-final-assets/home-header.jpg"); }
+    background-image: url("../FunPlaceAssets/homeHeader.jpg"); }
   header.blog {
-    background-image: url("../FunPlace-final-assets/blog-header.jpg"); }
+    background-image: url("../FunPlaceAssets/blogHeader.jpg"); }
   header.contact {
-    background-image: url("../FunPlace-final-assets/contact-header.jpg"); }
+    background-image: url("../FunPlaceAssets/contactHeader.jpg"); }
 
 .homeHeaderImage {
   position: absolute;
