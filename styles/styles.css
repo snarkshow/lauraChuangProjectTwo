@@ -458,7 +458,7 @@ header {
 
 .homeHeaderImage {
   position: absolute;
-  top: 35%;
+  bottom: -25%;
   right: 0;
   width: 40%; }
 
@@ -502,16 +502,11 @@ h1 {
   .contact h1 {
     font-size: calc(121.5px * 0.7); }
   .homeHeaderImage {
-    position: absolute;
-    top: 47%;
-    right: 0;
     width: 45%; } }
 
 @media (max-width: 767px) {
   .homeHeaderImage {
-    position: absolute;
-    top: 45vh;
-    right: 0;
+    top: 47vh;
     width: 50%; }
   .homePage h1 {
     font-size: calc(145.2px * 0.5); }
@@ -532,9 +527,6 @@ h1 {
   .homePage h1 {
     font-size: calc(145.2px * 0.4); }
   .homeHeaderImage {
-    position: absolute;
-    top: 45vh;
-    right: 0;
     width: 55%; }
   .blog h1,
   .contact h1 {

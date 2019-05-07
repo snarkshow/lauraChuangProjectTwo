@@ -75,7 +75,7 @@ header{
 
 .homeHeaderImage{
     position: absolute;
-    top: 35%;
+    bottom: -25%;
     right: 0;
     width: 40%;
     }
@@ -136,9 +136,6 @@ h1{
     }
 
     .homeHeaderImage{
-        position: absolute;
-        top: 47%;
-        right: 0;
         width: 45%;
     }
 }
@@ -146,9 +143,7 @@ h1{
 @media (max-width: 767px){
 
     .homeHeaderImage{
-        position: absolute;
-        top: 45vh;
-        right: 0;
+        top: 47vh;
         width: 50%;
     }
 
@@ -180,9 +175,6 @@ h1{
     }
 
     .homeHeaderImage{
-        position: absolute;
-        top: 45vh;
-        right: 0;
         width: 55%;
     }
 
