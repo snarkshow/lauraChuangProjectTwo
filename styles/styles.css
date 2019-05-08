@@ -458,7 +458,7 @@ header {
 
 .homeHeaderImage {
   position: absolute;
-  bottom: -25%;
+  top: 25%;
   right: 0;
   width: 40%; }
 
