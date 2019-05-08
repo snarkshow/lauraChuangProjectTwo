@@ -179,6 +179,9 @@ img {
   line-height: 41.6px;
   width: 100%;
   padding: 5px 15px; }
+  .readMore:hover,
+  .findOutMore:hover {
+    border: inset 2px #474bb5; }
 
 .submitButton {
   background-color: #08fded;
@@ -189,6 +192,8 @@ img {
   width: 95%;
   border: 1px solid #08fded;
   margin: 10px; }
+  .submitButton:hover {
+    border: inset 2px #474bb5; }
 
 .social {
   display: -webkit-box;
@@ -198,6 +203,8 @@ img {
     margin-right: 25px; }
     .social li a {
       font-size: 25px; }
+      .social li a:hover {
+        color: #08fded; }
 
 @media (max-width: 890px) {
   .social {

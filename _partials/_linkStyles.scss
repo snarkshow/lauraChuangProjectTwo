@@ -19,6 +19,9 @@
 .findOutMore{
     @include buttonStyles(100%);
     padding: 5px 15px;
+    &:hover{
+        border: inset 2px $colourPurple;
+    }
 }
 
 // EMAIL FORM BUTTON STYLES
@@ -27,6 +30,9 @@
     @include buttonStyles(95%);
     border: 1px solid $colourBrightAqua;
     margin: 10px;
+    &:hover{
+        border: inset 2px $colourPurple;
+    }
 }
 
 // SOCIAL MEDIA ICONS 
@@ -37,13 +43,16 @@
         margin-right: 25px;
         a{
         font-size: 25px;
+        &:hover{
+            color: $colourBrightAqua;
         }
+        }
+        
     }
 }
 
 
 @media (max-width: 890px){
-
     .social {
         align-items: center;
         display:flex;
