@@ -389,7 +389,7 @@ input, select, textarea {
     padding: 10px;
     width: 100%; } }
 
-#skipToContent a {
+.skipToContent a {
   background-color: #08fded;
   color: #474bb5;
   font-family: 'Walter Turncoat', cursive;
@@ -407,7 +407,7 @@ input, select, textarea {
   transition: top 0.5s ease-out;
   z-index: 100; }
 
-#skipToContent a:focus {
+.skipToContent a:focus {
   position: absolute;
   left: 0;
   top: 0;

@@ -1,6 +1,6 @@
 // SKIP LINK
 
-#skipToContent a {
+.skipToContent a {
     @include buttonStyles(100%);
     padding: 5px 15px;
     position: absolute;
@@ -12,7 +12,7 @@
     z-index: 100;
 }
 
-#skipToContent a:focus {
+.skipToContent a:focus {
     position: absolute;
     left: 0;
     top: 0;
